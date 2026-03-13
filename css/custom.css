@@ -721,11 +721,7 @@ header.main-header .header-sticky.active .container-fluid::before {
   position: absolute;
   width: 100%;
   padding: 0;
-  background: linear-gradient(
-    263deg,
-    var(--accent-color) 0.16%,
-    var(--dark-color) 99.84%
-  );
+  background-color: #0046db;
 }
 
 .slicknav_menu ul {
