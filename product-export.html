@@ -1,0 +1,2478 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1"
+    />
+    <meta name="author" content="Global Network Institute" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <title>Global Network Institute</title>
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
+    <link href="css/slicknav.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link href="css/all.css" rel="stylesheet" media="screen" />
+    <link href="css/animate.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/mousecursor.css" />
+    <link href="css/custom.css" rel="stylesheet" media="screen" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .service-item .icon-box {
+        height: 50px;
+        width: 50px;
+      }
+      .service-item {
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 16px;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+      .service-item-list {
+        border-bottom: unset;
+      }
+      .hero {
+        padding: 320px 30px 100px;
+      }
+
+      .bg .ep-bva {
+        background: #f2f1ed;
+        padding: 80px 0;
+      }
+      .ep-bva-col {
+        border-radius: 20px;
+        padding: 36px;
+        height: 100%;
+      }
+      .ep-bva-col.before {
+        background: #fff;
+        border: 2px solid #e8e8e2;
+      }
+      .ep-bva-col.after {
+        background: var(--primary-color);
+      }
+      .ep-bva-col h4 {
+        font-size: 20px;
+        font-weight: 800;
+        text-transform: uppercase;
+        margin-bottom: 24px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .ep-bva-col.before h4 {
+        color: #c0392b;
+      }
+      .ep-bva-col.after h4 {
+        color: var(--secondary-color);
+      }
+      .ep-bva-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+      .ep-bva-list li {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        font-size: 16px;
+        line-height: 1.4;
+      }
+      .ep-bva-col.before .ep-bva-list li {
+        color: #555;
+      }
+      .ep-bva-col.after .ep-bva-list li {
+        color: rgba(255, 255, 255, 0.8);
+      }
+      .ep-bva-list li i {
+        flex-shrink: 0;
+        margin-top: 2px;
+      }
+      .ep-bva-col.before .ep-bva-list li i {
+        color: #c0392b;
+      }
+      .ep-bva-col.after .ep-bva-list li i {
+        color: var(--secondary-color);
+      }
+      .ep-bva-list li .bi-check-circle-fill,
+      h4 .bi-check-circle-fill {
+        color: #9ee200; /* green circle — the icon itself IS the circle */
+      }
+      .ep-bva-col.after .ep-bva-list li .bi-check-circle-fill {
+        color: #9ee200 !important;
+        font-size: 18px;
+        margin-right: 8px;
+        flex-shrink: 0;
+      }
+      .how-work-item .icon-box {
+        background-color: #0046db !important;
+        background-image: unset;
+        background-size: 200% auto;
+        border-radius: 50%;
+        height: 70px;
+        width: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.4s ease-in-out;
+      }
+      .ep-bva-footer {
+        margin-top: 40px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--primary-color);
+      }
+      .hero::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        /* background: rgba(4, 42, 45, 0.75); */
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+      }
+      .export-coaching-step-content p {
+        font-size: 16px;
+      }
+      .icon-box i {
+        font-size: 35px;
+      }
+      .company-experience-item h2 {
+        color: white !important;
+        font-size: 20px;
+        margin-bottom: 30px;
+      }
+      body {
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Preloader -->
+    <!-- <div class="preloader">
+      <div class="loading-container">
+        <div class="loading"></div>
+        <div id="loading-icon"><img src="images/loader.svg" alt="" /></div>
+      </div>
+    </div> -->
+
+    <!-- Header -->
+    <header class="main-header">
+      <div class="header-sticky">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+              <img src="images/logo.svg" alt="Logo" />
+            </a>
+            <div class="collapse navbar-collapse main-menu">
+              <div class="nav-menu-wrapper">
+                <ul class="navbar-nav mr-auto" id="menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                  </li>
+                  <li class="nav-item submenu">
+                    <a class="nav-link" href="programs.html">Programs</a>
+                    <ul>
+                      <li><a href="product-export.html">Product Export</a></li>
+                      <li>
+                        <a href="product-procedure.html"
+                          >Export Procedures & Documentation</a
+                        >
+                      </li>
+                      <li><a href="service-export.html">Services Export</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item submenu">
+                    <a class="nav-link" href="#">Seminars & Delegation</a>
+                    <ul>
+                      <li><a href="vibrantinar.html">Vibrantinars</a></li>
+                      <li class="submenu">
+                        <a href="seminarList.html">Seminars</a>
+                        <ul>
+                          <li>
+                            <a href="seminarList.html">List of Seminars</a>
+                          </li>
+                          <li>
+                            <a href="AiForExports.html">AI for Exports</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li><a href="buisness.html">Business Delegation</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="header-btn d-inline-flex">
+                <a href="tel:+919825506441" class="btn-phone">
+                  <i class="fa-solid fa-phone-volume"></i>+91 98255 06441
+                </a>
+                <a href="contact.html" class="btn-default">get in touch</a>
+              </div>
+            </div>
+            <div class="navbar-toggle"></div>
+          </div>
+        </nav>
+        <div class="responsive-menu"></div>
+      </div>
+    </header>
+    <div class="hero bg-section parallaxie">
+      <div class="hero-section">
+        <div class="container-fluid">
+          <div class="row align-items-end">
+            <div class="col-lg-6 col-md-9">
+              <div class="hero-content">
+                <div class="section-title">
+                  <h3 class="wow fadeInUp">
+                    International Course on Export & International Marketing
+                  </h3>
+                  <h1 class="wow fadeInUp" data-wow-delay="0.2s">
+                    Enter, Expand & Scale in Global Markets — With a
+                    <span>Proven Export Roadmap</span>
+                  </h1>
+
+                  <p class="wow fadeInUp text-white" data-wow-delay="0.3s">
+                    A Structured 4-Day Live Online Training Program Designed to
+                    Help You Generate Real Export Orders — Not Just Export
+                    Knowledge. Have you been trying to enter international
+                    markets… But struggling to convert global inquiries into
+                    confirmed export orders? <br /><em>Here's the truth:</em>
+                    Every successful exporter reaches a turning point. That
+                    turning point comes when they stop guessing — and start
+                    following a structured export system.
+                    <strong>This program gives you that system.</strong>
+                  </p>
+                  <div class="hero-btn wow fadeInUp mt-4" data-wow-delay="0.4s">
+                    <a href="contact.html" class="btn-default"
+                      >Join the 4-Day Live Online Program</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 align-items-end"></div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-12">
+              <div
+                class="export-coaching-box wow fadeInUp"
+                data-wow-delay="0.6s"
+              >
+                <div
+                  class="swiper export-steps-swiper"
+                  style="width: 100%; overflow: hidden"
+                >
+                  <div class="swiper-wrapper">
+                    <!-- Original 5 slides -->
+                    <div class="swiper-slide export-coaching-step">
+                      <div class="icon-box">
+                        <i
+                          class="fa-solid fa-envelope-open"
+                          style="font-size: 35px; color: var(--accent-color)"
+                        ></i>
+                      </div>
+                      <div class="export-coaching-step-content">
+                        <p>
+                          Sending emails to international buyers but receiving
+                          no replies
+                        </p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide export-coaching-step">
+                      <div class="icon-box">
+                        <i
+                          class="fa-solid fa-globe"
+                          style="font-size: 35px; color: var(--accent-color)"
+                        ></i>
+                      </div>
+                      <div class="export-coaching-step-content">
+                        <p>
+                          Unsure which countries are profitable for your product
+                        </p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide export-coaching-step">
+                      <div class="icon-box">
+                        <i
+                          class="fa-solid fa-file-circle-question"
+                          style="font-size: 35px; color: var(--accent-color)"
+                        ></i>
+                      </div>
+                      <div class="export-coaching-step-content">
+                        <p>Confused about export compliance and tariffs</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide export-coaching-step">
+                      <div class="icon-box">
+                        <i
+                          class="fa-solid fa-store"
+                          style="font-size: 35px; color: var(--accent-color)"
+                        ></i>
+                      </div>
+                      <div class="export-coaching-step-content">
+                        <p>
+                          Participating in expos without real business outcomes
+                        </p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide export-coaching-step">
+                      <div class="icon-box">
+                        <i
+                          class="fa-solid fa-handshake-slash"
+                          style="font-size: 28px; color: var(--accent-color)"
+                        ></i>
+                      </div>
+                      <div class="export-coaching-step-content">
+                        <p>
+                          Generating leads but unable to close export orders
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- Duplicate 5 slides for loop -->
+                    <div class="swiper-slide export-coaching-step">
+                      <div class="icon-box">
+                        <i
+                          class="fa-solid fa-envelope-open"
+                          style="font-size: 28px; color: var(--accent-color)"
+                        ></i>
+                      </div>
+                      <div class="export-coaching-step-content">
+                        <p>
+                          Sending emails to international buyers but receiving
+                          no replies
+                        </p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide export-coaching-step">
+                      <div class="icon-box">
+                        <i
+                          class="fa-solid fa-globe"
+                          style="font-size: 28px; color: var(--accent-color)"
+                        ></i>
+                      </div>
+                      <div class="export-coaching-step-content">
+                        <p>
+                          Unsure which countries are profitable for your product
+                        </p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide export-coaching-step">
+                      <div class="icon-box">
+                        <i
+                          class="fa-solid fa-file-circle-question"
+                          style="font-size: 28px; color: var(--accent-color)"
+                        ></i>
+                      </div>
+                      <div class="export-coaching-step-content">
+                        <p>Confused about export compliance and tariffs</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide export-coaching-step">
+                      <div class="icon-box">
+                        <i
+                          class="fa-solid fa-store"
+                          style="font-size: 28px; color: var(--accent-color)"
+                        ></i>
+                      </div>
+                      <div class="export-coaching-step-content">
+                        <p>
+                          Participating in expos without real business outcomes
+                        </p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide export-coaching-step">
+                      <div class="icon-box">
+                        <i
+                          class="fa-solid fa-handshake-slash"
+                          style="font-size: 28px; color: var(--accent-color)"
+                        ></i>
+                      </div>
+                      <div class="export-coaching-step-content">
+                        <p>
+                          Generating leads but unable to close export orders
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      /* Override static width so swiper can control it */
+      .export-steps-swiper .export-coaching-step {
+        width: 280px !important;
+        padding-right: 60px;
+        box-sizing: border-box;
+      }
+    </style>
+
+    <div class="our-potential">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="our-potential-content">
+              <div class="section-title" style="margin-bottom: 10px">
+                <h3 class="wow fadeInUp">Lorem, ipsum dolor.</h3>
+                <h2 class="wow fadeInUp" data-wow-delay="0.2s">
+                  What This Program Will
+                  <span>Do For You</span>
+                </h2>
+              </div>
+              <p class="wow fadeInUp mt-5" data-wow-delay="0.5s">
+                The Export Market Entry & Growth Program is designed to help
+                you:
+              </p>
+
+              <div class="our-potential-body">
+                <div
+                  class="potential-body-list wow fadeInUp"
+                  data-wow-delay="0.4s"
+                >
+                  <ul>
+                    <li>Enter international markets confidently</li>
+                    <li>Identify high-potential export countries using data</li>
+                    <li>Generate genuine importer leads</li>
+                    <li>Convert inquiries into confirmed export orders</li>
+                    <li>Build long-term international buyer relationships</li>
+                    <li>Scale exports using systems - not random efforts</li>
+                  </ul>
+                </div>
+              </div>
+
+              <p
+                class="wow fadeInUp"
+                data-wow-delay="0.7s"
+                style="
+                  font-size: 18px;
+                  font-weight: 700;
+                  color: var(--primary-color);
+                  margin-top: 30px;
+                  border-top: 1px solid var(--divider-color);
+                  padding-top: 20px;
+                "
+              >
+                This is strategy + execution + implementation.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="our-potential-img">
+              <figure class="image-anime reveal">
+                <img
+                  src="images/1.jpg"
+                  alt=""
+                  style="aspect-ratio: 1 / 0.85; object-fit: cover"
+                />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="our-service bg-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="service-content">
+              <div class="section-title">
+                <h3 class="wow fadeInUp">Lorem, ipsum.</h3>
+                <h2 class="wow fadeInUp" data-wow-delay="0.25s">
+                  How The Program <span>Works</span>
+                </h2>
+                <p class="wow fadeInUp" data-wow-delay="0.5s">
+                  You won't just attend sessions. You will build your export
+                  execution roadmap.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="service-item-list">
+              <div class="service-item wow fadeInUp">
+                <div class="icon-box">
+                  <i
+                    class="fa-solid fa-calendar-days"
+                    style="font-size: 18px; color: #fff"
+                  ></i>
+                </div>
+                <div class="service-item-content">
+                  <h3>4 Days – Live Online Training</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+              </div>
+
+              <div class="service-item wow fadeInUp" data-wow-delay="0.2s">
+                <div class="icon-box">
+                  <i
+                    class="fa-solid fa-laptop"
+                    style="font-size: 18px; color: #fff"
+                  ></i>
+                </div>
+                <div class="service-item-content">
+                  <h3>8 Interactive Sessions (2 Hours Each)</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+              </div>
+
+              <div class="service-item wow fadeInUp" data-wow-delay="0.4s">
+                <div class="icon-box">
+                  <i
+                    class="fa-solid fa-users"
+                    style="font-size: 18px; color: #fff"
+                  ></i>
+                </div>
+                <div class="service-item-content">
+                  <h3>Multiple Expert Faculty</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+              </div>
+
+              <div class="service-item wow fadeInUp" data-wow-delay="0.6s">
+                <div class="icon-box">
+                  <i
+                    class="fa-solid fa-diagram-project"
+                    style="font-size: 18px; color: #fff"
+                  ></i>
+                </div>
+                <div class="service-item-content">
+                  <h3>Practical Implementation Framework</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+              </div>
+
+              <div class="service-item wow fadeInUp" data-wow-delay="0.8s">
+                <div class="icon-box">
+                  <i
+                    class="fa-solid fa-hands-holding-circle"
+                    style="font-size: 18px; color: #fff"
+                  ></i>
+                </div>
+                <div class="service-item-content">
+                  <h3>Post-Training Handholding Support</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="ep-bva" style="margin-top: 120px">
+      <div class="container">
+        <div class="section-title wow fadeInUp">
+          <h3>Your Export Transformation</h3>
+          <h2>Before vs <span>After</span></h2>
+        </div>
+        <div class="row g-4 mt-2">
+          <div class="col-lg-6 wow fadeInUp">
+            <div class="ep-bva-col before">
+              <h4><i class="bi bi-x-circle-fill"></i> Before Joining</h4>
+              <ul class="ep-bva-list">
+                <li>
+                  <i class="bi bi-x-circle"></i> Randomly targeting countries
+                </li>
+                <li>
+                  <i class="bi bi-x-circle"></i> Sending cold emails without
+                  response
+                </li>
+                <li>
+                  <i class="bi bi-x-circle"></i> No clarity on buyer acquisition
+                  strategy
+                </li>
+                <li>
+                  <i class="bi bi-x-circle"></i> Fear of compliance,
+                  documentation & tariffs
+                </li>
+                <li>
+                  <i class="bi bi-x-circle"></i> Attending exhibitions without
+                  results
+                </li>
+                <li>
+                  <i class="bi bi-x-circle"></i> Inconsistent export growth
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.15s">
+            <div class="ep-bva-col after">
+              <h4>
+                <i class="bi bi-check-circle-fill"></i> After Completing The
+                Program
+              </h4>
+              <ul class="ep-bva-list">
+                <li>
+                  <i class="bi bi-check-circle-fill"></i> Data-backed country
+                  selection strategy
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i> Proven system to find
+                  genuine importers
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i> Structured
+                  lead-to-order conversion framework
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i> High-impact digital
+                  B2B negotiation process
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i> Long-term buyer
+                  relationship strategy
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i> 90-Day Action Roadmap
+                  for export growth
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <p class="ep-bva-footer wow fadeInUp" data-wow-delay="0.2s">
+          You stop experimenting. You start scaling confidently.
+        </p>
+      </div>
+    </section>
+
+    <div class="how-we-work">
+      <div class="container">
+        <div class="row section-row align-items-center">
+          <div class="col-lg-8">
+            <div class="section-title">
+              <h3 class="wow fadeInUp">Who Should Attend</h3>
+              <h2 class="wow fadeInUp" data-wow-delay="0.25s">
+                This Program is <span>Ideal For</span>
+              </h2>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="section-btn wow fadeInUp" data-wow-delay="0.5s">
+              <a href="contact.html" class="btn-default">Register Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="how-work-item wow fadeInUp" data-wow-delay="0.0s">
+              <div class="icon-box">
+                <i
+                  class="fa-solid fa-industry"
+                  style="font-size: 20px; color: #fff"
+                ></i>
+              </div>
+              <div class="how-work-content">
+                <h3><span>01.</span> Manufacturers</h3>
+                <p>Manufacturers entering global markets.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="how-work-item wow fadeInUp" data-wow-delay="0.2s">
+              <div class="icon-box">
+                <i
+                  class="fa-solid fa-boxes-stacked"
+                  style="font-size: 20px; color: #fff"
+                ></i>
+              </div>
+              <div class="how-work-content">
+                <h3><span>02.</span> Traders</h3>
+                <p>Traders scaling export operations.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="how-work-item wow fadeInUp" data-wow-delay="0.4s">
+              <div class="icon-box">
+                <i
+                  class="fa-solid fa-store"
+                  style="font-size: 20px; color: #fff"
+                ></i>
+              </div>
+              <div class="how-work-content">
+                <h3><span>03.</span> MSMEs</h3>
+                <p>MSMEs ready to go international.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="how-work-item wow fadeInUp" data-wow-delay="0.6s">
+              <div class="icon-box">
+                <i
+                  class="fa-solid fa-briefcase"
+                  style="font-size: 20px; color: #fff"
+                ></i>
+              </div>
+              <div class="how-work-content">
+                <h3><span>04.</span> Service Providers</h3>
+                <p>Service providers expanding overseas.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="how-work-item wow fadeInUp" data-wow-delay="0.0s">
+              <div class="icon-box">
+                <i
+                  class="fa-solid fa-rocket"
+                  style="font-size: 20px; color: #fff"
+                ></i>
+              </div>
+              <div class="how-work-content">
+                <h3><span>05.</span> Entrepreneurs</h3>
+                <p>Entrepreneurs starting their export journey.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="how-work-item wow fadeInUp" data-wow-delay="0.2s">
+              <div class="icon-box">
+                <i
+                  class="fa-solid fa-arrow-trend-up"
+                  style="font-size: 20px; color: #fff"
+                ></i>
+              </div>
+              <div class="how-work-content">
+                <h3><span>06.</span> Existing Exporters</h3>
+                <p>Existing exporters wanting structured growth.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="how-work-item wow fadeInUp" data-wow-delay="0.4s">
+              <div class="icon-box">
+                <i
+                  class="fa-solid fa-user-tie"
+                  style="font-size: 20px; color: #fff"
+                ></i>
+              </div>
+              <div class="how-work-content">
+                <h3><span>07.</span> Managers</h3>
+                <p>Managers handling international trade.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <style>
+      .company-experience-item {
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 16px;
+        padding: 24px 20px;
+        box-sizing: border-box;
+      }
+    </style>
+    <div class="company-experience bg-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-5">
+            <div class="company-experience-content">
+              <div class="section-title">
+                <h3 class="wow fadeInUp">What You'll Walk Away With</h3>
+                <h2 class="wow fadeInUp" data-wow-delay="0.25s">
+                  After 4 intensive days, <span>you will have:</span>
+                </h2>
+                <p class="wow fadeInUp" data-wow-delay="0.5s">
+                  You leave with clarity. You leave with execution confidence.
+                </p>
+              </div>
+              <div class="section-btn wow fadeInUp" data-wow-delay="0.75s">
+                <a href="contact.html" class="btn-default">Register Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="company-experience-list">
+              <div
+                class="company-experience-item"
+                style="width: calc(50% - 15px)"
+              >
+                <h2>
+                  <i
+                    class="fa-solid fa-globe"
+                    style="font-size: 25px; color: white"
+                  ></i>
+                </h2>
+                <h3>Export Market Entry</h3>
+                <p>Complete export market entry strategy</p>
+              </div>
+
+              <div
+                class="company-experience-item"
+                style="width: calc(50% - 15px)"
+              >
+                <h2>
+                  <i
+                    class="fa-solid fa-magnifying-glass"
+                    style="font-size: 25px; color: white"
+                  ></i>
+                </h2>
+                <h3>Buyer Discovery</h3>
+                <p>Buyer discovery & engagement system</p>
+              </div>
+
+              <div
+                class="company-experience-item"
+                style="width: calc(50% - 15px)"
+              >
+                <h2>
+                  <i
+                    class="fa-solid fa-handshake"
+                    style="font-size: 25px; color: white"
+                  ></i>
+                </h2>
+                <h3>Order Conversion</h3>
+                <p>Conversion methodology for confirmed orders</p>
+              </div>
+
+              <div
+                class="company-experience-item"
+                style="width: calc(50% - 15px)"
+              >
+                <h2>
+                  <i
+                    class="fa-solid fa-shield-halved"
+                    style="font-size: 25px; color: white"
+                  ></i>
+                </h2>
+                <h3>Risk & Compliance</h3>
+                <p>Export risk & compliance clarity</p>
+              </div>
+
+              <div
+                class="company-experience-item"
+                style="width: calc(50% - 15px)"
+              >
+                <h2>
+                  <i
+                    class="fa-solid fa-bullhorn"
+                    style="font-size: 25px; color: white"
+                  ></i>
+                </h2>
+                <h3>Digital Visibility</h3>
+                <p>Digital visibility strategy for global reach</p>
+              </div>
+
+              <div
+                class="company-experience-item"
+                style="width: calc(50% - 15px)"
+              >
+                <h2>
+                  <i
+                    class="fa-solid fa-road"
+                    style="font-size: 25px; color: white"
+                  ></i>
+                </h2>
+                <h3>Implementation Roadmap</h3>
+                <p>3-Month Implementation Roadmap</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Page Services Start -->
+    <style>
+      :root {
+        --primary: #042a2d;
+        --accent: #73ed7c;
+        --teal: #019297;
+        --cream: #f2f1ed;
+        --white: #ffffff;
+      }
+      .aife-why {
+        background: var(--cream);
+        padding: 120px 0;
+      }
+      .aife-why-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 24px;
+        margin-top: 40px;
+      }
+      .aife-why-card {
+        background: var(--white);
+        border: 1px solid #e8e8e2;
+        border-radius: 16px;
+        padding: 24px;
+        transition:
+          box-shadow 0.2s,
+          transform 0.2s;
+      }
+      .company-experience-item h3 {
+        font-weight: 800;
+        font-size: 24px;
+      }
+      .how-work-content h3 {
+        font-weight: 800;
+        font-size: 24px;
+      }
+      .aife-why-card:hover {
+        box-shadow: 0 8px 32px rgba(4, 42, 45, 0.1);
+        transform: translateY(-3px);
+      }
+      .aife-why-card-icon {
+        width: 52px;
+        height: 52px;
+        border-radius: 14px;
+        background: #0046db;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+      .aife-why-card h4 {
+        font-size: 17px;
+        font-weight: 700;
+        color: var(--primary);
+        margin-bottom: 14px;
+      }
+      .aife-why-card ul {
+        padding-left: 18px;
+        margin: 0;
+      }
+      .aife-why-card ul li {
+        font-size: 16px;
+        color: #666;
+        line-height: 1.4;
+        margin-bottom: 6px;
+      }
+    </style>
+
+    <section class="aife-section aife-why">
+      <div class="container">
+        <div class="section-title wow fadeInUp">
+          <h3>our program</h3>
+          <h2 class="wow fadeInUp" data-wow-delay="0.15s">
+            Your 4-Day Export<br />
+            <span>Transformation Journey</span>
+          </h2>
+        </div>
+        <div class="aife-why-grid">
+          <div class="aife-why-card wow fadeInUp" data-wow-delay="0.1s">
+            <div class="aife-why-card-icon">
+              <i class="fas fa-chess-rook"></i>
+            </div>
+            <h4>Day 1 – Strategic Export Foundation</h4>
+            <ul>
+              <li>Crafting your export vision & positioning</li>
+              <li>Data-driven market selection</li>
+              <li>Managing global tariffs & regulatory shifts</li>
+              <li>Positioning for high-value export orders</li>
+              <li>Risk assessment before entering markets</li>
+            </ul>
+          </div>
+
+          <div class="aife-why-card wow fadeInUp" data-wow-delay="0.2s">
+            <div class="aife-why-card-icon">
+              <i class="fas fa-handshake"></i>
+            </div>
+            <h4>Day 2 – Global Buyer Acquisition & Lead Conversion</h4>
+            <ul>
+              <li>How successful exporters win new markets</li>
+              <li>Generating credible importer leads</li>
+              <li>Using digital platforms & trade networks effectively</li>
+              <li>Converting inquiries into confirmed orders</li>
+              <li>Negotiating repeat & long-term contracts</li>
+            </ul>
+          </div>
+
+          <div class="aife-why-card wow fadeInUp" data-wow-delay="0.3s">
+            <div class="aife-why-card-icon">
+              <i class="fas fa-globe"></i>
+            </div>
+            <h4>Day 3 – International Market Expansion</h4>
+            <ul>
+              <li>Turning expos into real business</li>
+              <li>Appointing overseas agents</li>
+              <li>Setting up warehouses abroad</li>
+              <li>Exporting to US Government & UN markets</li>
+              <li>Entering Middle East & African regions</li>
+              <li>Building strong digital export presence</li>
+            </ul>
+          </div>
+
+          <div class="aife-why-card wow fadeInUp" data-wow-delay="0.4s">
+            <div class="aife-why-card-icon">
+              <i class="fas fa-rocket"></i>
+            </div>
+            <h4>Day 4 – Digital & Scalable Export Systems</h4>
+            <ul>
+              <li>Building systems for scalable export growth</li>
+              <li>Leveraging e-commerce for exports</li>
+              <li>Ensuring smooth digital compliance</li>
+              <li>Securing international export payments</li>
+              <li>Stabilizing export business in changing markets</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <style>
+      /* ── SECTION 8: IMPLEMENTATION SUPPORT ── */
+      .aife-impl {
+        background: var(--white);
+        padding: 90px 0;
+      }
+      .aife-impl-list {
+        list-style: none;
+        padding: 0;
+        margin: 32px 0 0;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+      }
+      .aife-impl-list li {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        font-size: 16px;
+        color: var(--primary);
+        font-weight: 500;
+      }
+      .aife-impl-check {
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        background: #9ee200;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        font-weight: 800;
+        flex-shrink: 0;
+      }
+      .aife-impl-right {
+        background: #1d222f;
+        border-radius: 20px;
+        padding: 44px 40px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+      }
+      .aife-impl-right-line {
+        border-left: 3px solid #9ee200;
+        padding-left: 20px;
+      }
+      .aife-impl-right-line p {
+        font-size: 22px;
+        font-weight: 700;
+        color: var(--white);
+        margin: 0;
+        line-height: 1.4;
+      }
+      .aife-impl-right-line small {
+        display: block;
+        margin-top: 8px;
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.5);
+      }
+
+      /* ── SECTION 9: 3-PHASE FRAMEWORK ── */
+      .aife-framework {
+        background: var(--cream);
+        padding: 90px 0 60px;
+      }
+      .aife-phase-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+        margin-top: 40px;
+        margin-bottom: 48px;
+      }
+      @media (max-width: 768px) {
+        .aife-phase-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+      .aife-phase-card {
+        background: var(--white);
+        border-radius: 16px;
+        padding: 40px 28px;
+        text-align: center;
+        border: 1px solid #e8e8e2;
+        transition:
+          box-shadow 0.2s,
+          transform 0.2s;
+      }
+      .aife-phase-card:hover {
+        box-shadow: 0 8px 32px rgba(4, 42, 45, 0.1);
+        transform: translateY(-3px);
+      }
+      .aife-phase-num {
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+        background: #1d222f;
+        color: white;
+        font-size: 20px;
+        font-weight: 800;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 20px;
+      }
+      .aife-phase-card h4 {
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #0046db;
+        margin-bottom: 10px;
+      }
+      .aife-phase-card p {
+        font-size: 22px;
+        font-weight: 700;
+        color: var(--primary);
+        margin: 0;
+        line-height: 1.4;
+      }
+      .aife-framework-footer {
+        margin: 0 auto;
+        background: #0046db;
+        padding: 22px 40px;
+        border-radius: 8px;
+        text-align: center;
+        width: fit-content;
+      }
+      .aife-framework-footer p {
+        color: rgba(255, 255, 255, 0.85);
+        font-size: 17px;
+        font-weight: 600;
+        margin: 0;
+        white-space: nowrap;
+      }
+      .aife-framework-footer p span {
+        color: white;
+      }
+    </style>
+
+    <!-- ── SECTION 8: IMPLEMENTATION SUPPORT & RESOURCES ── -->
+    <section class="aife-impl">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 wow fadeInUp">
+            <div class="section-title">
+              <h3>implementation support</h3>
+              <h2>Across All 4 Days, <span>You Also Receive</span></h2>
+            </div>
+            <p style="font-size: 16px; color: #555">
+              Across all 4 days, you also receive:
+            </p>
+            <ul class="aife-impl-list">
+              <li>
+                <div class="aife-impl-check">✓</div>
+                Real exporter case studies
+              </li>
+              <li>
+                <div class="aife-impl-check">✓</div>
+                Practical demonstrations
+              </li>
+              <li>
+                <div class="aife-impl-check">✓</div>
+                40+ Export Resources
+              </li>
+              <li>
+                <div class="aife-impl-check">✓</div>
+                30-Step Implementation Roadmap (Next 90 Days)
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="aife-impl-right">
+              <div class="aife-impl-right-line">
+                <p>You don't just attend a program.</p>
+                <small>This is more than training — it's a system.</small>
+              </div>
+              <div class="aife-impl-right-line">
+                <p>You build a structured export engine.</p>
+                <small
+                  >Designed for real-world implementation from day one.</small
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SECTION 9: THE 3-PHASE EXPORT SUCCESS FRAMEWORK ── -->
+    <section class="aife-framework">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="section-title wow fadeInUp">
+              <h3>success framework</h3>
+              <h2 class="wow fadeInUp" data-wow-delay="0.15s">
+                The 3-Phase Export <span>Success Framework</span>
+              </h2>
+            </div>
+          </div>
+          <div class="col-lg-3"></div>
+          <div class="col-lg-3">
+            <p class="aife-body wow fadeInUp" data-wow-delay="0.2s">
+              Everything you learn follows this proven structure
+            </p>
+          </div>
+        </div>
+
+        <div class="aife-phase-grid">
+          <div class="aife-phase-card wow fadeInUp" data-wow-delay="0.1s">
+            <div class="aife-phase-num">1</div>
+            <h4>Phase One</h4>
+            <p>Discovery of Importers</p>
+          </div>
+          <div class="aife-phase-card wow fadeInUp" data-wow-delay="0.2s">
+            <div class="aife-phase-num">2</div>
+            <h4>Phase Two</h4>
+            <p>Engagement with Importers</p>
+          </div>
+          <div class="aife-phase-card wow fadeInUp" data-wow-delay="0.3s">
+            <div class="aife-phase-num">3</div>
+            <h4>Phase Three</h4>
+            <p>Order Closing with Importers</p>
+          </div>
+        </div>
+        <div class="aife-framework-footer wow fadeInUp" data-wow-delay="0.4s">
+          <p>
+            This framework turns export efforts into
+            <span>predictable growth.</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <style>
+      /* ── SECTION 10: 25 YEARS OF EXPORT EXCELLENCE ── */
+      .aife-stats {
+        background: #1d222f;
+        padding: 90px 0;
+      }
+      .aife-stats-header h3 {
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin-bottom: 12px;
+      }
+      .aife-stats-header h2 {
+        font-size: clamp(28px, 4vw, 48px);
+        font-weight: 800;
+        color: var(--white);
+        line-height: 1.1;
+        margin-bottom: 16px;
+      }
+      .aife-stats-header h2 span {
+        color: #0046db;
+      }
+      .aife-stats-header p {
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.55);
+        max-width: 480px;
+        margin-bottom: 32px;
+      }
+      .aife-trained-badge {
+        display: inline-flex;
+        align-items: baseline;
+        gap: 6px;
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 100px;
+        padding: 10px 24px;
+        margin-bottom: 32px;
+      }
+      .aife-trained-badge strong {
+        font-size: 28px;
+        font-weight: 800;
+        color: white;
+      }
+      .aife-trained-badge span {
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.6);
+        font-weight: 500;
+      }
+      .aife-perf-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+      .aife-perf-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 12px;
+        padding: 18px 24px;
+        gap: 16px;
+        transition:
+          background 0.2s,
+          border-color 0.2s;
+      }
+      .aife-perf-item:hover {
+        background: rgba(115, 237, 124, 0.06);
+        border-color: rgba(115, 237, 124, 0.2);
+      }
+      .aife-perf-left {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+      }
+      .aife-perf-dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #0046db;
+        flex-shrink: 0;
+      }
+      .aife-perf-label {
+        font-size: 15px;
+        color: white;
+        font-weight: 500;
+      }
+      .aife-perf-count {
+        font-size: 22px;
+        font-weight: 800;
+        color: #0046db;
+        white-space: nowrap;
+      }
+      .aife-perf-count span {
+        font-size: 13px;
+        font-weight: 500;
+        color: white;
+        margin-left: 4px;
+      }
+      .aife-stats-footer {
+        margin-top: 40px;
+        padding: 20px 28px;
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-left: 3px solid #0046db;
+        border-radius: 0 12px 12px 0;
+      }
+      .aife-stats-footer p {
+        font-size: 16px;
+        font-weight: 700;
+        color: var(--white);
+        margin: 0;
+      }
+
+      /* ── MENTOR IMAGE SIZE FIX ── */
+      .our-potential-img figure img {
+        width: 100%;
+        max-height: 480px;
+        object-fit: cover;
+        object-position: top;
+        border-radius: 16px;
+      }
+    </style>
+
+    <!-- ── SECTION 10: 25 YEARS OF EXPORT EXCELLENCE ── -->
+    <section class="aife-stats">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 wow fadeInUp">
+            <div class="section-title" style="margin-bottom: 10px">
+              <h3 class="wow fadeInUp text-white">
+                25 years of export excellence
+              </h3>
+              <h1 class="wow fadeInUp text-white" data-wow-delay="0.2s">
+                Trusted by Thousands
+                <span>of Exporters</span>
+              </h1>
+            </div>
+            <div class="aife-stats-header">
+              <p>
+                Global Network Institute has trained business owners and
+                professionals in exports and international trade.
+              </p>
+            </div>
+            <div class="aife-trained-badge">
+              <strong>6,900+</strong>
+              <span>business owners & professionals trained</span>
+            </div>
+            <div class="aife-stats-footer">
+              <p>
+                We measure success by export performance — not certificates.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
+            <ul class="aife-perf-list">
+              <li class="aife-perf-item">
+                <div class="aife-perf-left">
+                  <div class="aife-perf-dot"></div>
+                  <span class="aife-perf-label"
+                    >Companies exporting up to ₹10 Crores</span
+                  >
+                </div>
+                <div class="aife-perf-count">800 <span>companies</span></div>
+              </li>
+              <li class="aife-perf-item">
+                <div class="aife-perf-left">
+                  <div class="aife-perf-dot"></div>
+                  <span class="aife-perf-label"
+                    >Companies exporting ₹10–100 Crores</span
+                  >
+                </div>
+                <div class="aife-perf-count">250 <span>companies</span></div>
+              </li>
+              <li class="aife-perf-item">
+                <div class="aife-perf-left">
+                  <div class="aife-perf-dot"></div>
+                  <span class="aife-perf-label"
+                    >Companies exporting ₹100–500 Crores</span
+                  >
+                </div>
+                <div class="aife-perf-count">80 <span>companies</span></div>
+              </li>
+              <li class="aife-perf-item">
+                <div class="aife-perf-left">
+                  <div class="aife-perf-dot"></div>
+                  <span class="aife-perf-label"
+                    >Companies exporting ₹500–1000 Crores</span
+                  >
+                </div>
+                <div class="aife-perf-count">6 <span>companies</span></div>
+              </li>
+              <li class="aife-perf-item">
+                <div class="aife-perf-left">
+                  <div class="aife-perf-dot"></div>
+                  <span class="aife-perf-label"
+                    >Companies exporting ₹1000–2000 Crores</span
+                  >
+                </div>
+                <div class="aife-perf-count">2 <span>companies</span></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SECTION 11: MEET YOUR MENTOR ── -->
+    <div class="our-potential">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="our-potential-content">
+              <div class="section-title">
+                <h3 class="wow fadeInUp">meet your mentor</h3>
+                <h2 class="wow fadeInUp" data-wow-delay="0.25s">
+                  Dr. Jagat Shah <span>– Export Growth Mentor</span>
+                </h2>
+                <p class="wow fadeInUp" data-wow-delay="0.5s">
+                  With decades of experience mentoring global trade businesses,
+                  Dr. Jagat Shah has guided thousands in structuring and scaling
+                  export growth worldwide.
+                </p>
+              </div>
+              <div class="our-potential-body">
+                <div class="potential-body-content">
+                  <h3 class="wow fadeInUp">Founder & Global Trade Leader</h3>
+                </div>
+                <div
+                  class="potential-body-list wow fadeInUp"
+                  data-wow-delay="0.4s"
+                >
+                  <ul>
+                    <li>Founder – Global Network</li>
+                    <li>Founder – Vibrant Markets</li>
+                    <li>Mentor-on-Road (USA & India)</li>
+                    <li>Leader – Smart Villages Initiative</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="our-potential-img">
+              <figure class="image-anime reveal">
+                <img src="images/jaga.png" alt="Dr. Jagat Shah" />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Page Services End -->
+    <div class="our-testimonial bg-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-8">
+            <div class="our-testimonial-content">
+              <div class="section-title">
+                <h3 class="wow fadeInUp">What Participants Say</h3>
+                <h2
+                  class="wow fadeInUp"
+                  style="font-size: 48px"
+                  data-wow-delay="0.25s"
+                >
+                  Lorem ipsum dolor<span>Lorem</span>
+                </h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-8">
+            <div class="testimonial-slider">
+              <div class="swiper">
+                <div class="swiper-wrapper" data-cursor-text="Drag">
+                  <!-- Testimonial 1 -->
+                  <div class="swiper-slide">
+                    <div class="testimonial-item">
+                      <div class="testimonial-slider-image">
+                        <figure class="image-anime">
+                          <img
+                            src="images/users.jpg"
+                            alt="Parirajan Muthalagu"
+                          />
+                        </figure>
+                      </div>
+                      <div class="testimonial-slider-content">
+                        <div class="testimonial-header">
+                          <div class="testimonial-rating-company">
+                            <img
+                              src="images/icon-testimonial-rating-4.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="testimonial-quote">
+                            <img src="images/testimonial-quote.svg" alt="" />
+                          </div>
+                        </div>
+                        <div class="testimonial-rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="testimonial-content">
+                          <p>
+                            "This program helped us analyze data, identify
+                            serious buyers, and manage export transactions
+                            digitally — exactly what modern exporters need."
+                          </p>
+                        </div>
+                        <div class="author-content">
+                          <h3>Parirajan Muthalagu</h3>
+                          <p>MTC Polymers & Packaging, Tamil Nadu</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Testimonial 2 -->
+                  <div class="swiper-slide">
+                    <div class="testimonial-item">
+                      <div class="testimonial-slider-image">
+                        <figure class="image-anime">
+                          <img src="images/users.jpg" alt="Suhas R" />
+                        </figure>
+                      </div>
+                      <div class="testimonial-slider-content">
+                        <div class="testimonial-header">
+                          <div class="testimonial-rating-company">
+                            <img
+                              src="images/icon-testimonial-rating-4.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="testimonial-quote">
+                            <img src="images/testimonial-quote.svg" alt="" />
+                          </div>
+                        </div>
+                        <div class="testimonial-rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="testimonial-content">
+                          <p>
+                            "The live sessions and tool demonstrations were
+                            eye-opening. It showed how powerful digital
+                            platforms can be for exports."
+                          </p>
+                        </div>
+                        <div class="author-content">
+                          <h3>Suhas R</h3>
+                          <p>Sri Padmaraj Jewellers, Coimbatore</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial-btn">
+                  <div class="testimonial-button-prev"></div>
+                  <div class="testimonial-button-next"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="rts-section">
+      <div class="container">
+        <div class="rts-wrapper">
+          <!-- Left: Headline + desc + button -->
+          <div class="rts-left">
+            <div class="section-title" style="margin-bottom: 24px">
+              <h3 class="wow fadeInUp">Get Started Today</h3>
+              <h2 class="wow fadeInUp" data-wow-delay="0.2s">
+                Ready to Scale Your <span>Export Business?</span>
+              </h2>
+            </div>
+            <p class="rts-desc wow fadeInUp" data-wow-delay="0.3s">
+              Don't spend years figuring exports on your own. Join the Export
+              Market Entry & Growth Program and gain the systems, strategy, and
+              support to export confidently.
+            </p>
+            <div class="rts-meta wow fadeInUp" data-wow-delay="0.4s">
+              <span>4 Days</span>
+              <span>8 Sessions</span>
+              <span>Lifetime Impact</span>
+            </div>
+            <a
+              href="contact.html"
+              class="btn-default wow fadeInUp"
+              data-wow-delay="0.5s"
+            >
+              Register Now
+            </a>
+          </div>
+
+          <!-- Right: Card -->
+          <div class="rts-right wow fadeInUp" data-wow-delay="0.2s">
+            <div class="rts-card">
+              <h4 class="rts-card-title">
+                Export Market Entry & Growth Program
+              </h4>
+              <p class="rts-card-desc">
+                Gain clarity, systems and strategy to grow internationally — in
+                just 4 days.
+              </p>
+              <ul class="rts-checklist">
+                <li>
+                  <span class="rts-check"
+                    ><i class="fa-solid fa-check"></i
+                  ></span>
+                  Proven export roadmap
+                </li>
+                <li>
+                  <span class="rts-check"
+                    ><i class="fa-solid fa-check"></i
+                  ></span>
+                  Buyer acquisition & conversion systems
+                </li>
+                <li>
+                  <span class="rts-check"
+                    ><i class="fa-solid fa-check"></i
+                  ></span>
+                  Implementation support
+                </li>
+                <li>
+                  <span class="rts-check"
+                    ><i class="fa-solid fa-check"></i
+                  ></span>
+                  Scalable export growth strategy
+                </li>
+              </ul>
+              <a href="contact.html" class="rts-card-btn">
+                Enroll Now <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <style>
+      /* ── Section ── */
+      .rts-section {
+        padding: 120px 0;
+        /* background: #f2f1ed; */
+      }
+
+      /* ── Two-column flex wrapper ── */
+      .rts-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 60px;
+      }
+
+      /* ── Left ── */
+      .rts-left {
+        flex: 1;
+      }
+
+      .rts-desc {
+        font-size: 17px;
+        color: #666;
+        line-height: 1.8;
+        margin-bottom: 28px;
+        max-width: 520px;
+      }
+
+      /* ── Pill meta row ── */
+      .rts-meta {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 32px;
+        flex-wrap: wrap;
+      }
+
+      .rts-meta span {
+        display: inline-block;
+        background: white;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 6px 18px;
+        font-size: 14px;
+        font-weight: 600;
+        color: #1b222f;
+      }
+
+      /* ── Right Card ── */
+      .rts-right {
+        flex: 0 0 420px;
+      }
+
+      .rts-card {
+        background: #1b222f;
+        border-radius: 24px;
+        padding: 44px 40px;
+      }
+
+      .rts-card-title {
+        font-size: 22px;
+        font-weight: 800;
+        color: white;
+        margin-bottom: 12px;
+        font-family: "Instrument Sans", sans-serif;
+        line-height: 1.3;
+      }
+
+      .rts-card-desc {
+        font-size: 15px;
+        color: rgba(255, 255, 255, 0.5);
+        line-height: 1.6;
+        margin-bottom: 28px;
+      }
+
+      /* ── Checklist ── */
+      .rts-checklist {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+      }
+
+      .rts-checklist li {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        font-size: 15px;
+        color: rgba(255, 255, 255, 0.85);
+        font-weight: 500;
+        padding-bottom: 14px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .rts-checklist li:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+
+      .rts-check {
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        background: #9ee200;
+        color: #1b222f;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        font-weight: 800;
+        flex-shrink: 0;
+      }
+
+      /* ── Card CTA ── */
+      .rts-card-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+        background: #0046db;
+        color: white;
+        font-size: 16px;
+        font-weight: 700;
+        padding: 16px 24px;
+        border-radius: 12px;
+        text-decoration: none;
+        transition: background 0.3s ease;
+      }
+
+      .rts-card-btn:hover {
+        background: #0035a8;
+        color: white;
+      }
+
+      /* ── Responsive ── */
+      @media (max-width: 991px) {
+        .rts-wrapper {
+          flex-direction: column;
+          gap: 40px;
+        }
+
+        .rts-right {
+          flex: 0 0 auto;
+          width: 100%;
+        }
+      }
+
+      @media (max-width: 575px) {
+        .rts-section {
+          padding: 70px 0;
+        }
+
+        .rts-card {
+          padding: 30px 24px;
+        }
+      }
+    </style>
+    <!-- ── SECTION 13: FAQ ── -->
+    <div class="our-faqs" style="padding-top: 0px">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section-title">
+              <h3 class="wow fadeInUp">FAQs</h3>
+              <h2 class="wow fadeInUp" data-wow-delay="0.25s">
+                Frequently Asked <span>Questions</span>
+              </h2>
+            </div>
+            <div class="our-faq-section">
+              <div class="faq-accordion" id="faqaccordion">
+                <div class="accordion-item wow fadeInUp">
+                  <h2 class="accordion-header" id="h1">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#f1"
+                      aria-expanded="false"
+                    >
+                      1. Do I need prior export experience to join this program?
+                    </button>
+                  </h2>
+                  <div
+                    id="f1"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqaccordion"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        No. Whether you are a beginner planning to start exports
+                        or an existing exporter wanting to scale, this program
+                        provides structured guidance for all levels.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item wow fadeInUp" data-wow-delay="0.1s">
+                  <h2 class="accordion-header" id="h2">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#f2"
+                      aria-expanded="false"
+                    >
+                      2. Will I get practical implementation support or only
+                      theory?
+                    </button>
+                  </h2>
+                  <div
+                    id="f2"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqaccordion"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        This is not a theory-based course. You will receive
+                        frameworks, practical demonstrations, real case studies,
+                        and a 30-step implementation roadmap to execute
+                        immediately.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item wow fadeInUp" data-wow-delay="0.2s">
+                  <h2 class="accordion-header" id="h3">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#f3"
+                      aria-expanded="false"
+                    >
+                      3. Is this program suitable for service providers as well?
+                    </button>
+                  </h2>
+                  <div
+                    id="f3"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqaccordion"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        Yes. The frameworks covered apply to both product
+                        exporters and service providers targeting international
+                        markets.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item wow fadeInUp" data-wow-delay="0.3s">
+                  <h2 class="accordion-header" id="h4">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#f4"
+                      aria-expanded="false"
+                    >
+                      4. Will this program help me generate real export leads?
+                    </button>
+                  </h2>
+                  <div
+                    id="f4"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqaccordion"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        Yes. You will learn proven methods to identify genuine
+                        importers, engage them effectively, and convert
+                        discussions into confirmed export orders.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item wow fadeInUp" data-wow-delay="0.35s">
+                  <h2 class="accordion-header" id="h5">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#f5"
+                      aria-expanded="false"
+                    >
+                      5. What if I already have some export experience?
+                    </button>
+                  </h2>
+                  <div
+                    id="f5"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqaccordion"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        Then this program will help you scale systematically —
+                        by improving market selection, lead conversion strategy,
+                        negotiation approach, and digital systems.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item wow fadeInUp" data-wow-delay="0.4s">
+                  <h2 class="accordion-header" id="h6">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#f6"
+                      aria-expanded="false"
+                    >
+                      6. Will I get access to session recordings?
+                    </button>
+                  </h2>
+                  <div
+                    id="f6"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqaccordion"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        Yes. Participants will receive access to recordings for
+                        review and implementation support after the live
+                        sessions.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="gni-cta-section">
+      <div class="container">
+        <div class="gni-cta-banner">
+          <!-- Left: Main Headline -->
+          <div class="gni-cta-headline">
+            <h2>Ready to Take Your <br />Business Global?</h2>
+          </div>
+
+          <!-- Center: Subheadline -->
+          <div class="gni-cta-sub">
+            <p class="gni-cta-sub-title">Limited Seats Available!</p>
+            <p class="gni-cta-sub-text">
+              Join India's most trusted export training program. Limited seats
+              available!
+            </p>
+          </div>
+
+          <!-- Right: Arrow Button -->
+          <div class="gni-cta-action">
+            <a
+              href="#"
+              class="gni-cta-btn"
+              aria-label="Register for the Next Batch"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
+            <span class="gni-cta-btn-label">Register for the Next Batch</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===================== END CTA SECTION ===================== -->
+
+    <style>
+      /* ── Section wrapper ── */
+      .gni-cta-section {
+        padding: 60px 0;
+        margin-bottom: 70px;
+      }
+
+      /* ── Banner card ── */
+      .gni-cta-banner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+        background: var(--accent-color);
+        border-radius: 24px;
+        padding: 50px 55px;
+      }
+
+      /* ── Headline ── */
+      .gni-cta-headline {
+        flex: 0 0 auto;
+        max-width: 380px;
+      }
+
+      .gni-cta-headline h2 {
+        font-size: 42px;
+        font-weight: 800;
+        line-height: 1.15;
+        color: white;
+        margin: 0;
+        font-family: "Instrument Sans", sans-serif;
+      }
+
+      /* ── Sub text ── */
+      .gni-cta-sub {
+        flex: 1;
+        padding: 0 40px;
+        border-left: 1px solid #3567d3;
+      }
+
+      .gni-cta-sub-title {
+        font-size: 22px;
+        font-weight: 700;
+        color: white;
+        margin-bottom: 6px;
+      }
+
+      .gni-cta-sub-text {
+        font-size: 18px;
+        font-weight: 500;
+        color: white;
+        opacity: 0.8;
+        margin: 0;
+        line-height: 1.6;
+      }
+
+      /* ── Action: arrow button + label ── */
+      .gni-cta-action {
+        flex: 0 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .gni-cta-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80px;
+        height: 80px;
+        border: 2px solid white;
+        border-radius: 18px;
+        color: white;
+        transition:
+          background 0.3s ease,
+          color 0.3s ease;
+        flex-shrink: 0;
+      }
+
+      .gni-cta-btn svg {
+        width: 34px;
+        height: 34px;
+        transition: transform 0.3s ease;
+      }
+
+      .gni-cta-btn:hover {
+        background: var(--primary-color);
+        color: var(--accent-color);
+      }
+
+      .gni-cta-btn:hover svg {
+        transform: rotate(45deg);
+        stroke: white;
+      }
+
+      .gni-cta-btn-label {
+        font-size: 12px;
+        font-weight: 600;
+        color: white;
+        text-align: center;
+        max-width: 90px;
+        line-height: 1.4;
+        opacity: 0.75;
+      }
+
+      /* ── Responsive ── */
+      @media (max-width: 991px) {
+        .gni-cta-banner {
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 40px 30px;
+        }
+
+        .gni-cta-headline h2 {
+          font-size: 34px;
+        }
+
+        .gni-cta-sub {
+          border-left: none;
+          border-top: 1px solid rgba(4, 42, 45, 0.2);
+          padding: 20px 0 0;
+          width: 100%;
+        }
+
+        .gni-cta-action {
+          flex-direction: row;
+          align-items: center;
+          gap: 16px;
+          width: 100%;
+        }
+
+        .gni-cta-btn-label {
+          max-width: 200px;
+          font-size: 14px;
+        }
+      }
+
+      @media (max-width: 575px) {
+        .gni-cta-headline h2 {
+          font-size: 28px;
+        }
+
+        .gni-cta-banner {
+          padding: 30px 20px;
+        }
+      }
+    </style>
+
+    <!-- Footer -->
+    <footer class="main-footer bg-section" style="margin-top: 60px">
+      <div class="container">
+        <div class="row align-items-start footer-info-row">
+          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+            <div class="footer-contact-info">
+              <h3>Contact Information</h3>
+              <p>
+                <i class="fa-regular fa-envelope footer-info-icon"></i>
+                <a href="mailto:jagat@globaljagat.com" class="footer-nav-link"
+                  >jagat@globaljagat.com</a
+                >
+              </p>
+              <p>
+                <i class="fa-solid fa-phone footer-info-icon"></i>
+                <span>+91 98255 06441</span>
+              </p>
+              <p>
+                <i class="fa-solid fa-location-dot footer-info-icon"></i>
+                <span
+                  >1001, 10th floor, Safal Prelude, Prahladnagar, Ahmedabad,
+                  Gujarat - India</span
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <div class="footer-contact-info"><h3>Programs</h3></div>
+            <ul class="footer-nav-list">
+              <li>
+                <a href="programs.html" class="footer-nav-link">All Programs</a>
+              </li>
+              <li>
+                <a
+                  href="product-export.html"
+                  class="footer-nav-link footer-nav-sub"
+                  >— Product Export</a
+                >
+              </li>
+              <li>
+                <a
+                  href="product-procedure.html"
+                  class="footer-nav-link footer-nav-sub"
+                  >— Export Procedures & Documentation</a
+                >
+              </li>
+              <li>
+                <a
+                  href="service-export.html"
+                  class="footer-nav-link footer-nav-sub"
+                  >— Services Export</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+            <div class="footer-contact-info">
+              <h3>Seminars & Delegation</h3>
+            </div>
+            <ul class="footer-nav-list">
+              <li>
+                <a href="vibrantinar.html" class="footer-nav-link"
+                  >Vibrantinars</a
+                >
+              </li>
+              <li>
+                <a href="seminarList.html" class="footer-nav-link"
+                  >List of Seminars</a
+                >
+              </li>
+              <li>
+                <a href="AiForExports.html" class="footer-nav-link"
+                  >AI for Exports</a
+                >
+              </li>
+              <li>
+                <a href="buisness.html" class="footer-nav-link"
+                  >Business Delegation</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <div class="footer-contact-info"><h3>Follow Us</h3></div>
+            <div class="footer-social-links">
+              <ul>
+                <li>
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-copyright">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <div class="footer-copyright-text footer-copyright-left">
+                <p>Copyright &copy; 2024 All Rights Reserved.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="footer-menu">
+                <ul class="footer-menu-right">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="programs.html">Programs</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/validator.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/SmoothScroll.js"></script>
+    <script src="js/parallaxie.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/magiccursor.js"></script>
+    <script src="js/SplitText.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="js/jquery.mb.YTPlayer.min.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/function.js"></script>
+    <style>
+      /* Make all 5 fit perfectly across full width */
+      .export-steps-swiper .export-coaching-step {
+        width: 20vw !important;
+        padding-right: 40px;
+        box-sizing: border-box;
+      }
+    </style>
+    <script>
+      window.addEventListener("load", function () {
+        setTimeout(function () {
+          var el = document.querySelector(".export-steps-swiper");
+          if (el && el.swiper) el.swiper.destroy(true, true);
+
+          new Swiper(".export-steps-swiper", {
+            slidesPerView: 5,
+            spaceBetween: 0,
+            loop: true,
+            speed: 800,
+            autoplay: {
+              delay: 2500,
+              disableOnInteraction: false,
+            },
+            breakpoints: {
+              0: { slidesPerView: 1 },
+              576: { slidesPerView: 2 },
+              768: { slidesPerView: 3 },
+              1024: { slidesPerView: 4 },
+              1280: { slidesPerView: 5 },
+            },
+          });
+        }, 800);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,1542 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1"
+    />
+    <meta name="author" content="Global Network Institute" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <title>Global Network Institute</title>
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
+    <link href="css/slicknav.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link href="css/all.css" rel="stylesheet" media="screen" />
+    <link href="css/animate.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/mousecursor.css" />
+    <link href="css/custom.css" rel="stylesheet" media="screen" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background: white;
+      }
+    </style>
+
+    <style>
+      /* ── YouTube Section ── */
+      .res-yt {
+        background: var(--white-color);
+        padding: 90px 0;
+      }
+      .res-yt-desc {
+        color: #555;
+        font-size: 16px;
+        line-height: 1.4;
+        margin-bottom: 16px;
+      }
+      .res-yt-card {
+        border-radius: 10px;
+        overflow: hidden;
+        transition:
+          transform 0.3s,
+          box-shadow 0.3s;
+        text-decoration: none;
+        display: block;
+      }
+      .res-yt-card:hover {
+        transform: translateY(-6px);
+      }
+      .res-yt-thumb {
+        position: relative;
+        aspect-ratio: 16/9;
+        background: #111;
+        overflow: hidden;
+      }
+      .res-yt-thumb img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.85;
+        transition: opacity 0.3s;
+      }
+      .res-yt-card:hover .res-yt-thumb img {
+        opacity: 1;
+      }
+      .res-yt-play {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .res-yt-play span {
+        width: 50px;
+        height: 50px;
+        background: var(--secondary-color);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--primary-color);
+        font-size: 16px;
+        transition: transform 0.25s;
+      }
+      .res-yt-card:hover .res-yt-play span {
+        transform: scale(1);
+      }
+      .res-yt-body {
+        padding: 16px 0px;
+      }
+      .res-yt-body p {
+        color: black;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.1em;
+        color: var(--primary-color);
+        margin-bottom: 0;
+        font-family: "Instrument Sans", sans-serif;
+        margin: 0;
+      }
+
+      /* ── Stats Bar ── */
+      .res-stats {
+        background: #0046db;
+        padding: 40px 0;
+      }
+      .res-stat-item {
+        text-align: center;
+      }
+      .res-stat-num {
+        font-size: 56px;
+        font-weight: 700;
+        color: var(--white-color);
+        display: block;
+        line-height: 1;
+      }
+      .res-stat-lbl {
+        color: rgba(255, 255, 255, 0.65);
+        font-size: 16px;
+        margin-top: 8px;
+      }
+      .res-stat-sep {
+        width: 1px;
+        height: 56px;
+        background: rgba(255, 255, 255, 0.2);
+        margin: 0 auto;
+      }
+
+      /* ── Delegation Downloads ── */
+      .res-dl {
+        background: var(--white-color);
+        padding: 90px 0;
+      }
+      .res-dl-card {
+        background: #fff;
+        border: 1px solid #c5c5c5;
+        border-radius: 14px;
+        padding: 20px 22px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        transition:
+          box-shadow 0.3s,
+          transform 0.25s;
+      }
+      .res-dl-card:hover {
+        transform: translateY(-3px);
+        background-color: #0046db;
+      }
+
+      .res-dl-card:hover .res-dl-info h5,
+      .res-dl-card:hover .res-dl-info span {
+        color: white;
+      }
+      .res-dl-icon {
+        width: 46px;
+        height: 46px;
+        min-width: 46px;
+        background: var(--primary-color);
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--secondary-color);
+        font-size: 18px;
+      }
+      .res-dl-info {
+        flex: 1;
+      }
+      .res-dl-info h5 {
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--primary-color);
+        font-family: "Instrument Sans", sans-serif;
+        margin: 0 0 3px;
+      }
+      .res-dl-info span {
+        font-size: 16px;
+        color: #888;
+      }
+      .res-dl-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        background: var(--secondary-color);
+        color: var(--primary-color);
+        padding: 8px 18px;
+        border-radius: 8px;
+        font-size: 14px;
+        font-weight: 500;
+        text-decoration: none;
+        white-space: nowrap;
+        transition: opacity 0.2s;
+      }
+      .res-dl-btn:hover {
+        opacity: 0.85;
+        color: var(--primary-color);
+      }
+
+      /* ── Tables ── */
+      .res-tables {
+        background: var(--cream-color, #f2f1ed);
+        padding: 90px 0;
+      }
+      .res-table-card {
+        border: 1px solid #e0e0da;
+        border-radius: 8px;
+        overflow: hidden;
+        margin-bottom: 48px;
+      }
+      .res-table-head {
+        background: #0046db;
+        padding: 18px 24px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .res-table-head h4 {
+        color: #fff;
+        margin: 0;
+        font-size: 17px;
+        font-weight: 500;
+      }
+      .res-table-head .t-num {
+        font-size: 22px;
+      }
+      .res-table-card table {
+        width: 100%;
+        border-collapse: collapse;
+        background: #fff;
+      }
+      .res-table-card table thead th {
+        background: rgba(4, 42, 45, 0.05);
+        color: #1d222f;
+        font-size: 17px;
+        font-weight: 500;
+        text-transform: capitalize;
+        padding: 12px 18px;
+        border-bottom: 2px solid #e8e8e2;
+      }
+      .res-table-card table tbody td {
+        padding: 11px 18px;
+        font-size: 14px;
+        color: #333;
+        border-bottom: 1px solid #f0f0ea;
+      }
+      .res-table-card table tbody tr:last-child td {
+        border-bottom: none;
+      }
+      .res-table-card table tbody tr:hover td {
+        background: rgba(4, 42, 45, 0.02);
+      }
+      .res-table-card table tbody tr.total-row td {
+        font-weight: 500;
+        color: #1d222f;
+        background: rgba(4, 42, 45, 0.04);
+        border-top: 2px solid #e0e0da;
+        font-size: 17px;
+      }
+      .res-badge {
+        display: inline-block;
+        /* background: var(--primary-color); */
+        /* color: var(--secondary-color); */
+        font-size: 11px;
+        font-weight: 700;
+        padding: 3px 10px;
+        border-radius: 6px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Preloader -->
+    <!-- <div class="preloader">
+      <div class="loading-container">
+        <div class="loading"></div>
+        <div id="loading-icon"><img src="images/loader.svg" alt="" /></div>
+      </div>
+    </div> -->
+    <header class="main-header">
+      <div class="header-sticky">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+              <img src="images/logo.svg" alt="Logo" />
+            </a>
+            <div class="collapse navbar-collapse main-menu">
+              <div class="nav-menu-wrapper">
+                <ul class="navbar-nav mr-auto" id="menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                  </li>
+                  <li class="nav-item submenu">
+                    <a class="nav-link" href="programs.html">Programs</a>
+                    <ul>
+                      <li><a href="product-export.html">Product Export</a></li>
+                      <li>
+                        <a href="product-procedure.html"
+                          >Export Procedures & Documentation</a
+                        >
+                      </li>
+                      <li><a href="service-export.html">Services Export</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item submenu">
+                    <a class="nav-link" href="#">Seminars & Delegation</a>
+                    <ul>
+                      <li><a href="vibrantinar.html">Vibrantinars</a></li>
+                      <li class="submenu">
+                        <a href="seminarList.html">Seminars</a>
+                        <ul>
+                          <li>
+                            <a href="seminarList.html">List of Seminars</a>
+                          </li>
+                          <li>
+                            <a href="AiForExports.html">AI for Exports</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li><a href="buisness.html">Business Delegation</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="header-btn d-inline-flex">
+                <a href="tel:+919825506441" class="btn-phone">
+                  <i class="fa-solid fa-phone-volume"></i>+91 98255 06441
+                </a>
+                <a href="contact.html" class="btn-default">get in touch</a>
+              </div>
+            </div>
+            <div class="navbar-toggle"></div>
+          </div>
+        </nav>
+        <div class="responsive-menu"></div>
+      </div>
+    </header>
+
+    <!-- Page Header -->
+    <div class="page-header bg-section parallaxie">
+      <div class="page-header-box">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="page-header-content">
+                <h1 class="wow fadeInUp">Export <span>Resources</span></h1>
+                <nav class="wow fadeInUp" data-wow-delay="0.25s">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                      <a href="index.html">home</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      resources &amp; delegations
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── SECTION 1: YouTube ── -->
+    <section class="res-yt">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 wow fadeInUp">
+            <div class="section-title" style="margin-bottom: 20px">
+              <h3>Free Export Insights</h3>
+              <h2 class="wow fadeInUp" data-wow-delay="0.15s">
+                Watch. Learn. <span>Export.</span>
+              </h2>
+            </div>
+            <p class="res-yt-desc">
+              Get free export insights from Dr. Jagat Shah — straight from the
+              field, not a textbook. Our YouTube videos cover everything from AI
+              in exports and digital tools to country opportunities, market
+              entry strategies, blockchain in trade, and global business trends.
+              Short, practical, and packed with real-world intelligence you can
+              act on immediately. No fluff. Just the kind of export knowledge
+              that actually moves the needle for your business.
+            </p>
+            <a
+              href="https://www.youtube.com/@DrJagatShah"
+              target="_blank"
+              class="btn-default"
+              style="display: inline-flex; align-items: center; gap: 8px"
+            >
+              <i class="fa-brands fa-youtube"></i> Watch on YouTube
+            </a>
+          </div>
+
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="swiper yt-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a
+                    href="https://youtu.be/2Rh4_HyGUf8"
+                    target="_blank"
+                    class="res-yt-card"
+                  >
+                    <div class="res-yt-thumb">
+                      <img
+                        src="https://img.youtube.com/vi/2Rh4_HyGUf8/hqdefault.jpg"
+                        alt="Export Video 1"
+                      />
+                      <div class="res-yt-play">
+                        <span><i class="fa-solid fa-play"></i></span>
+                      </div>
+                    </div>
+                    <div class="res-yt-body">
+                      <p>Export Insights — Video 1</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a
+                    href="https://youtu.be/sD_tiWOXkiY"
+                    target="_blank"
+                    class="res-yt-card"
+                  >
+                    <div class="res-yt-thumb">
+                      <img
+                        src="https://img.youtube.com/vi/sD_tiWOXkiY/hqdefault.jpg"
+                        alt="Export Video 2"
+                      />
+                      <div class="res-yt-play">
+                        <span><i class="fa-solid fa-play"></i></span>
+                      </div>
+                    </div>
+                    <div class="res-yt-body">
+                      <p>Export Insights — Video 2</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a
+                    href="https://youtu.be/c04WkAwaPEI"
+                    target="_blank"
+                    class="res-yt-card"
+                  >
+                    <div class="res-yt-thumb">
+                      <img
+                        src="https://img.youtube.com/vi/c04WkAwaPEI/hqdefault.jpg"
+                        alt="Export Video 3"
+                      />
+                      <div class="res-yt-play">
+                        <span><i class="fa-solid fa-play"></i></span>
+                      </div>
+                    </div>
+                    <div class="res-yt-body">
+                      <p>Export Insights — Video 3</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── STATS BAR ── -->
+    <div class="res-stats">
+      <div class="container">
+        <div class="row align-items-center justify-content-center gy-4">
+          <div class="col-6 col-md-3">
+            <div class="res-stat-item wow fadeInUp">
+              <span class="res-stat-num">186</span>
+              <div class="res-stat-lbl">Total Delegations</div>
+            </div>
+          </div>
+          <div class="col-md-1 d-none d-md-block">
+            <div class="res-stat-sep"></div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="res-stat-item wow fadeInUp" data-wow-delay="0.1s">
+              <span class="res-stat-num">30+</span>
+              <div class="res-stat-lbl">Years of Operation</div>
+            </div>
+          </div>
+          <div class="col-md-1 d-none d-md-block">
+            <div class="res-stat-sep"></div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="res-stat-item wow fadeInUp" data-wow-delay="0.2s">
+              <span class="res-stat-num">6,900+</span>
+              <div class="res-stat-lbl">Trained Participants</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── SECTION 2: Delegation Downloads ── -->
+    <section class="res-dl">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="section-title wow fadeInUp">
+              <h3>International Delegations</h3>
+              <h2 class="wow fadeInUp" data-wow-delay="0.15s">
+                Want to Join Our Next International
+                <span>Business Delegation?</span>
+              </h2>
+            </div>
+          </div>
+          <div class="col-lg-2"></div>
+          <div class="col-lg-4">
+            <p class="wow fadeInUp" data-wow-delay="0.25s">
+              Get firsthand market exposure, meet potential buyers face-to-face,
+              and explore business opportunities with guided support from export
+              experts.
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-3 mt-4">
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.05s">
+            <div class="res-dl-card">
+              <div class="res-dl-icon">
+                <i class="fa-solid fa-file-pdf"></i>
+              </div>
+              <div class="res-dl-info">
+                <h5>Myanmar Delegate List — April 2023</h5>
+                <span>Past delegation highlights &amp; profiles</span>
+              </div>
+              <a
+                href="https://gni-institute.com/images/Myanmar-delegate-list-April-2023.pdf"
+                target="_blank"
+                class="res-dl-btn"
+              >
+                <i class="fa-solid fa-download"></i> Download
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="res-dl-card">
+              <div class="res-dl-icon">
+                <i class="fa-solid fa-file-pdf"></i>
+              </div>
+              <div class="res-dl-info">
+                <h5>Gulf Food Delegate List</h5>
+                <span>Past delegation highlights &amp; profiles</span>
+              </div>
+              <a
+                href="https://gni-institute.com/images/gulf-food-delegate-list.pdf"
+                target="_blank"
+                class="res-dl-btn"
+              >
+                <i class="fa-solid fa-download"></i> Download
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.15s">
+            <div class="res-dl-card">
+              <div class="res-dl-icon">
+                <i class="fa-solid fa-file-pdf"></i>
+              </div>
+              <div class="res-dl-info">
+                <h5>March 2022 UAE Business Delegation</h5>
+                <span>Past delegation highlights &amp; profiles</span>
+              </div>
+              <a
+                href="https://gni-institute.com/images/march-2022-uae-business-delegation.pdf"
+                target="_blank"
+                class="res-dl-btn"
+              >
+                <i class="fa-solid fa-download"></i> Download
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="res-dl-card">
+              <div class="res-dl-icon">
+                <i class="fa-solid fa-file-pdf"></i>
+              </div>
+              <div class="res-dl-info">
+                <h5>February Delegation Objectives</h5>
+                <span>Past delegation highlights &amp; profiles</span>
+              </div>
+              <a
+                href="https://gni-institute.com/images/february-delegation-objectives.pdf"
+                target="_blank"
+                class="res-dl-btn"
+              >
+                <i class="fa-solid fa-download"></i> Download
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.25s">
+            <div class="res-dl-card">
+              <div class="res-dl-icon">
+                <i class="fa-solid fa-file-pdf"></i>
+              </div>
+              <div class="res-dl-info">
+                <h5>Dubai Expo India Delegates Profile</h5>
+                <span>Past delegation highlights &amp; profiles</span>
+              </div>
+              <a
+                href="https://gni-institute.com/images/dubai-expo-india-delegates-profile.pdf"
+                target="_blank"
+                class="res-dl-btn"
+              >
+                <i class="fa-solid fa-download"></i> Download
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SECTION 3: Delegation Tables ── -->
+    <section class="res-tables">
+      <div class="container">
+        <div class="section-title wow fadeInUp">
+          <h3>Our Track Record</h3>
+          <h2 class="wow fadeInUp" data-wow-delay="0.15s">
+            Delegation <span>Statistics &amp; History</span>
+          </h2>
+        </div>
+
+        <!-- Table 1 -->
+        <div class="res-table-card wow fadeInUp">
+          <div class="res-table-head">
+            <span class="t-num">1️⃣</span>
+            <h4>Year-Wise Delegations Summary</h4>
+          </div>
+          <div class="table-responsive">
+            <table>
+              <thead>
+                <tr>
+                  <th>Year</th>
+                  <th>Delegations</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span class="res-badge">2025</span></td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td><span class="res-badge">2024</span></td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <td><span class="res-badge">2023</span></td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <td><span class="res-badge">2022</span></td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td><span class="res-badge">2021</span></td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td><span class="res-badge">2020</span></td>
+                  <td>0 (COVID)</td>
+                </tr>
+                <tr>
+                  <td><span class="res-badge">2019</span></td>
+                  <td>8</td>
+                </tr>
+                <tr>
+                  <td><span class="res-badge">2018</span></td>
+                  <td>21</td>
+                </tr>
+                <tr>
+                  <td><span class="res-badge">2017</span></td>
+                  <td>8</td>
+                </tr>
+                <tr>
+                  <td><span class="res-badge">2016</span></td>
+                  <td>8</td>
+                </tr>
+                <tr>
+                  <td><span class="res-badge">2015</span></td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td><span class="res-badge">2014</span></td>
+                  <td>8</td>
+                </tr>
+                <tr>
+                  <td><span class="res-badge">2013</span></td>
+                  <td>8</td>
+                </tr>
+                <tr>
+                  <td><span class="res-badge">2012</span></td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td><span class="res-badge">2011</span></td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <td><span class="res-badge">2010</span></td>
+                  <td>9</td>
+                </tr>
+                <tr>
+                  <td><span class="res-badge">2009</span></td>
+                  <td>8</td>
+                </tr>
+                <tr>
+                  <td><span class="res-badge">2008</span></td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <td><span class="res-badge">2007</span></td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <td><span class="res-badge">2006</span></td>
+                  <td>12</td>
+                </tr>
+                <tr>
+                  <td><span class="res-badge">2005</span></td>
+                  <td>14</td>
+                </tr>
+                <tr>
+                  <td><span class="res-badge">2004</span></td>
+                  <td>14</td>
+                </tr>
+                <tr>
+                  <td><span class="res-badge">2003</span></td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <td><span class="res-badge">2002</span></td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td><span class="res-badge">2001</span></td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td><span class="res-badge">2000</span></td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td><span class="res-badge">1999</span></td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <td><span class="res-badge">1998</span></td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td><span class="res-badge">1997</span></td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td><span class="res-badge">1996</span></td>
+                  <td>5</td>
+                </tr>
+                <tr class="total-row">
+                  <td><strong>Total</strong></td>
+                  <td><strong>186 Delegations</strong></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Table 2 -->
+        <div class="res-table-card wow fadeInUp" data-wow-delay="0.1s">
+          <div class="res-table-head">
+            <span class="t-num">2️⃣</span>
+            <h4>Recent Delegations (2025–2022)</h4>
+          </div>
+          <div class="table-responsive">
+            <table>
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Country</th>
+                  <th>Focus Area</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>31 Mar – Apr 2025</td>
+                  <td>Russia</td>
+                  <td>Business Delegation</td>
+                </tr>
+                <tr>
+                  <td>16–21 Feb 2025</td>
+                  <td>Dubai</td>
+                  <td>Gulf Food</td>
+                </tr>
+                <tr>
+                  <td>26–31 Jan 2025</td>
+                  <td>Dubai</td>
+                  <td>Arab Health</td>
+                </tr>
+                <tr>
+                  <td>1–3 Oct 2024</td>
+                  <td>Dubai</td>
+                  <td>Financial Services</td>
+                </tr>
+                <tr>
+                  <td>29 Sept 2024</td>
+                  <td>Dubai</td>
+                  <td>Financial Services</td>
+                </tr>
+                <tr>
+                  <td>12 July 2024</td>
+                  <td>Nepal</td>
+                  <td>Investment Delegation</td>
+                </tr>
+                <tr>
+                  <td>18–24 Feb 2024</td>
+                  <td>UAE</td>
+                  <td>Gulf Food 2024</td>
+                </tr>
+                <tr>
+                  <td>16–21 Oct 2023</td>
+                  <td>UAE</td>
+                  <td>Business Delegation</td>
+                </tr>
+                <tr>
+                  <td>11–31 May 2023</td>
+                  <td>Canada</td>
+                  <td>Business Delegation</td>
+                </tr>
+                <tr>
+                  <td>20–30 Apr 2023</td>
+                  <td>Myanmar</td>
+                  <td>Business Delegation</td>
+                </tr>
+                <tr>
+                  <td>19–25 Feb 2023</td>
+                  <td>UAE</td>
+                  <td>Gulf Food 2023</td>
+                </tr>
+                <tr>
+                  <td>27 Mar – 1 Apr 2022</td>
+                  <td>UAE</td>
+                  <td>Dubai Expo – Multi Product</td>
+                </tr>
+                <tr>
+                  <td>23–28 Jan 2022</td>
+                  <td>UAE</td>
+                  <td>Dubai Expo – Multi Product</td>
+                </tr>
+                <tr>
+                  <td>3–8 Dec 2021</td>
+                  <td>UAE</td>
+                  <td>Dubai Expo – Multi Product</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Table 3 -->
+        <div class="res-table-card wow fadeInUp" data-wow-delay="0.15s">
+          <div class="res-table-head">
+            <span class="t-num">3️⃣</span>
+            <h4>Major Global Delegation Highlights (2019–2016)</h4>
+          </div>
+          <div class="table-responsive">
+            <table>
+              <thead>
+                <tr>
+                  <th>Year</th>
+                  <th>Countries</th>
+                  <th>Focus</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span class="res-badge">2019</span></td>
+                  <td>
+                    USA, Canada, Israel, Nepal, Malaysia, Vietnam, Thailand,
+                    Singapore, Bahrain, Oman, Qatar, UK, Germany, France, Dubai
+                  </td>
+                  <td>Textile, Multi Sector, Vibrant Goa</td>
+                </tr>
+                <tr>
+                  <td><span class="res-badge">2018</span></td>
+                  <td>
+                    USA, Canada, Germany, UK, Vietnam, Laos, Nepal, Sri Lanka,
+                    Mauritius, Thailand, Qatar, Oman, Bahrain, Kuwait,
+                    Afghanistan, Dubai
+                  </td>
+                  <td>Agri &amp; Food, Multisector</td>
+                </tr>
+                <tr>
+                  <td><span class="res-badge">2017</span></td>
+                  <td>USA (Multiple Cities), Sri Lanka</td>
+                  <td>Multi Sector</td>
+                </tr>
+                <tr>
+                  <td><span class="res-badge">2016</span></td>
+                  <td>
+                    USA, Sri Lanka, Russia, Dubai, Philippines, Cambodia,
+                    Thailand
+                  </td>
+                  <td>Multi Sector, Organic Agriculture</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Table 4 -->
+        <div class="res-table-card wow fadeInUp" data-wow-delay="0.2s">
+          <div class="res-table-head">
+            <span class="t-num">4️⃣</span>
+            <h4>Early Global Expansion Phase (2015–2005 Highlights)</h4>
+          </div>
+          <div class="table-responsive">
+            <table>
+              <thead>
+                <tr>
+                  <th>Year</th>
+                  <th>Key Countries</th>
+                  <th>Focus Areas</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span class="res-badge">2015</span></td>
+                  <td>
+                    USA, Dubai, UK, China, Myanmar, Zambia, Uganda, Tanzania,
+                    Kenya
+                  </td>
+                  <td>Food &amp; Agri, Handicrafts, Elecrama</td>
+                </tr>
+                <tr>
+                  <td><span class="res-badge">2014</span></td>
+                  <td>Canada, USA, China</td>
+                  <td>Textile, EV Business</td>
+                </tr>
+                <tr>
+                  <td><span class="res-badge">2013</span></td>
+                  <td>Pakistan, Dubai, Canada, Indonesia, Europe, China</td>
+                  <td>Multi Product, Textiles</td>
+                </tr>
+                <tr>
+                  <td><span class="res-badge">2012–2010</span></td>
+                  <td>China, Canada, USA, Italy, Finland</td>
+                  <td>Engineering, Trade Summits</td>
+                </tr>
+                <tr>
+                  <td><span class="res-badge">2009–2007</span></td>
+                  <td>South Africa, Turkey, Egypt, Brunei, Serbia, China</td>
+                  <td>Clustering, Cutlery</td>
+                </tr>
+                <tr>
+                  <td><span class="res-badge">2006–2005</span></td>
+                  <td>
+                    China, USA, Canada, UAE, Germany, Spain, Sweden, Europe
+                  </td>
+                  <td>Textile, Carpets, Cotton, Silk, Brass, Aviation</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Table 5 -->
+        <div class="res-table-card wow fadeInUp" data-wow-delay="0.25s">
+          <div class="res-table-head">
+            <span class="t-num">5️⃣</span>
+            <h4>Foundational Years (1996–2004)</h4>
+          </div>
+          <div class="table-responsive">
+            <table>
+              <thead>
+                <tr>
+                  <th>Year Range</th>
+                  <th>Countries Covered</th>
+                  <th>Focus</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span class="res-badge">1996–1999</span></td>
+                  <td>
+                    Bangladesh, Sri Lanka, Thailand, Malaysia, Singapore,
+                    Australia, Indonesia, Russia, Ghana, UK, Germany, Canada,
+                    Nigeria, Italy, South Africa
+                  </td>
+                  <td>Multiproduct</td>
+                </tr>
+                <tr>
+                  <td><span class="res-badge">2000–2004</span></td>
+                  <td>
+                    Bangladesh, East Africa, China, Sri Lanka, Brazil, South
+                    Africa, Bangladesh, Canada, UAE, Ghana
+                  </td>
+                  <td>Multiproduct &amp; Cluster Delegations</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SECTION 4: FAQ ── -->
+    <div
+      class="our-faqs bg-white"
+      style="padding-top: 120px; padding-bottom: 120px"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section-title">
+              <h3 class="wow fadeInUp">Got Questions?</h3>
+              <h2 class="wow fadeInUp" data-wow-delay="0.25s">
+                Frequently Asked <span>Questions</span>
+              </h2>
+            </div>
+            <div class="our-faq-section">
+              <div class="faq-accordion" id="faqaccordion">
+                <div class="accordion-item wow fadeInUp">
+                  <h2 class="accordion-header" id="heading1">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq1"
+                      aria-expanded="false"
+                      aria-controls="faq1"
+                    >
+                      1. What makes Global Network Institute different from
+                      other export training providers?
+                    </button>
+                  </h2>
+                  <div
+                    id="faq1"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading1"
+                    data-bs-parent="#faqaccordion"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        We focus on implementation, not just theory — with 28
+                        years of proven frameworks, real case studies, and
+                        post-training handholding support that helps you
+                        actually execute what you learn.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item wow fadeInUp" data-wow-delay="0.1s">
+                  <h2 class="accordion-header" id="heading2">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq2"
+                      aria-expanded="false"
+                      aria-controls="faq2"
+                    >
+                      2. Who should join your programs?
+                    </button>
+                  </h2>
+                  <div
+                    id="faq2"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading2"
+                    data-bs-parent="#faqaccordion"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        Manufacturers, traders, service providers, MSMEs,
+                        entrepreneurs, and professionals — anyone serious about
+                        entering or scaling in international markets, regardless
+                        of experience level.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item wow fadeInUp" data-wow-delay="0.2s">
+                  <h2 class="accordion-header" id="heading3">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq3"
+                      aria-expanded="false"
+                      aria-controls="faq3"
+                    >
+                      3. Do I need prior export experience to join?
+                    </button>
+                  </h2>
+                  <div
+                    id="faq3"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading3"
+                    data-bs-parent="#faqaccordion"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        No, our programs cater to complete beginners and
+                        experienced exporters alike — we tailor guidance based
+                        on where you are in your export journey.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item wow fadeInUp" data-wow-delay="0.3s">
+                  <h2 class="accordion-header" id="heading4">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq4"
+                      aria-expanded="false"
+                      aria-controls="faq4"
+                    >
+                      4. Are your programs online or in-person?
+                    </button>
+                  </h2>
+                  <div
+                    id="faq4"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading4"
+                    data-bs-parent="#faqaccordion"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        We offer both formats — live online training for
+                        flexibility and in-person sessions for deeper
+                        engagement, depending on the specific program and batch.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item wow fadeInUp" data-wow-delay="0.4s">
+                  <h2 class="accordion-header" id="heading5">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq5"
+                      aria-expanded="false"
+                      aria-controls="faq5"
+                    >
+                      5. What kind of results have your participants achieved?
+                    </button>
+                  </h2>
+                  <div
+                    id="faq5"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading5"
+                    data-bs-parent="#faqaccordion"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        From our 6,900+ trained participants: 800 companies now
+                        export up to ₹10 Crores, 250 export ₹10–100 Crores, and
+                        several have grown to ₹100+ Crores annually.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="gni-cta-section">
+      <div class="container">
+        <div class="gni-cta-banner">
+          <!-- Left: Main Headline -->
+          <div class="gni-cta-headline">
+            <h2>Ready to Take Your <br />Business Global?</h2>
+          </div>
+
+          <!-- Center: Subheadline -->
+          <div class="gni-cta-sub">
+            <p class="gni-cta-sub-title">Limited Seats Available!</p>
+            <p class="gni-cta-sub-text">
+              Join India's most trusted export training program. Limited seats
+              available!
+            </p>
+          </div>
+
+          <!-- Right: Arrow Button -->
+          <div class="gni-cta-action">
+            <a
+              href="#"
+              class="gni-cta-btn"
+              aria-label="Register for the Next Batch"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
+            <span class="gni-cta-btn-label">Register for the Next Batch</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===================== END CTA SECTION ===================== -->
+
+    <style>
+      /* ── Section wrapper ── */
+
+      /* ── Banner card ── */
+      .gni-cta-banner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+        background: var(--accent-color);
+        border-radius: 24px;
+        padding: 50px 55px;
+      }
+
+      /* ── Headline ── */
+      .gni-cta-headline {
+        flex: 0 0 auto;
+        max-width: 380px;
+      }
+
+      .gni-cta-headline h2 {
+        font-size: 42px;
+        font-weight: 800;
+        line-height: 1.15;
+        color: white;
+        margin: 0;
+        font-family: "Instrument Sans", sans-serif;
+      }
+
+      /* ── Sub text ── */
+      .gni-cta-sub {
+        flex: 1;
+        padding: 0 40px;
+        border-left: 1px solid #3567d3;
+      }
+
+      .gni-cta-sub-title {
+        font-size: 22px;
+        font-weight: 700;
+        color: white;
+        margin-bottom: 6px;
+      }
+
+      .gni-cta-sub-text {
+        font-size: 18px;
+        font-weight: 500;
+        color: white;
+        opacity: 0.8;
+        margin: 0;
+        line-height: 1.6;
+      }
+
+      /* ── Action: arrow button + label ── */
+      .gni-cta-action {
+        flex: 0 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .gni-cta-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80px;
+        height: 80px;
+        border: 2px solid white;
+        border-radius: 18px;
+        color: white;
+        transition:
+          background 0.3s ease,
+          color 0.3s ease;
+        flex-shrink: 0;
+      }
+
+      .gni-cta-btn svg {
+        width: 34px;
+        height: 34px;
+        transition: transform 0.3s ease;
+      }
+
+      .gni-cta-btn:hover {
+        background: var(--primary-color);
+        color: var(--accent-color);
+      }
+
+      .gni-cta-btn:hover svg {
+        transform: rotate(45deg);
+        stroke: white;
+      }
+
+      .gni-cta-btn-label {
+        font-size: 12px;
+        font-weight: 600;
+        color: white;
+        text-align: center;
+        max-width: 90px;
+        line-height: 1.4;
+        opacity: 0.75;
+      }
+
+      /* ── Responsive ── */
+      @media (max-width: 991px) {
+        .gni-cta-banner {
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 40px 30px;
+        }
+
+        .gni-cta-headline h2 {
+          font-size: 34px;
+        }
+
+        .gni-cta-sub {
+          border-left: none;
+          border-top: 1px solid rgba(4, 42, 45, 0.2);
+          padding: 20px 0 0;
+          width: 100%;
+        }
+
+        .gni-cta-action {
+          flex-direction: row;
+          align-items: center;
+          gap: 16px;
+          width: 100%;
+        }
+
+        .gni-cta-btn-label {
+          max-width: 200px;
+          font-size: 14px;
+        }
+      }
+
+      @media (max-width: 575px) {
+        .gni-cta-headline h2 {
+          font-size: 28px;
+        }
+
+        .gni-cta-banner {
+          padding: 30px 20px;
+        }
+      }
+    </style>
+    <!-- Footer -->
+    <footer class="main-footer bg-section" style="margin-top: 120px">
+      <div class="container">
+        <div class="row align-items-start footer-info-row">
+          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+            <div class="footer-contact-info">
+              <h3>Contact Information</h3>
+              <p>
+                <i class="fa-regular fa-envelope footer-info-icon"></i>
+                <a href="mailto:jagat@globaljagat.com" class="footer-nav-link"
+                  >jagat@globaljagat.com</a
+                >
+              </p>
+              <p>
+                <i class="fa-solid fa-phone footer-info-icon"></i>
+                <span>+91 98255 06441</span>
+              </p>
+              <p>
+                <i class="fa-solid fa-location-dot footer-info-icon"></i>
+                <span
+                  >1001, 10th floor, Safal Prelude, Prahladnagar, Ahmedabad,
+                  Gujarat - India</span
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <div class="footer-contact-info"><h3>Programs</h3></div>
+            <ul class="footer-nav-list">
+              <li>
+                <a href="programs.html" class="footer-nav-link">All Programs</a>
+              </li>
+              <li>
+                <a
+                  href="product-export.html"
+                  class="footer-nav-link footer-nav-sub"
+                  >— Product Export</a
+                >
+              </li>
+              <li>
+                <a
+                  href="product-procedure.html"
+                  class="footer-nav-link footer-nav-sub"
+                  >— Export Procedures & Documentation</a
+                >
+              </li>
+              <li>
+                <a
+                  href="service-export.html"
+                  class="footer-nav-link footer-nav-sub"
+                  >— Services Export</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+            <div class="footer-contact-info">
+              <h3>Seminars & Delegation</h3>
+            </div>
+            <ul class="footer-nav-list">
+              <li>
+                <a href="vibrantinar.html" class="footer-nav-link"
+                  >Vibrantinars</a
+                >
+              </li>
+              <li>
+                <a href="seminarList.html" class="footer-nav-link"
+                  >List of Seminars</a
+                >
+              </li>
+              <li>
+                <a href="AiForExports.html" class="footer-nav-link"
+                  >AI for Exports</a
+                >
+              </li>
+              <li>
+                <a href="buisness.html" class="footer-nav-link"
+                  >Business Delegation</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <div class="footer-contact-info"><h3>Follow Us</h3></div>
+            <div class="footer-social-links">
+              <ul>
+                <li>
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-copyright">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <div class="footer-copyright-text footer-copyright-left">
+                <p>Copyright &copy; 2024 All Rights Reserved.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="footer-menu">
+                <ul class="footer-menu-right">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="programs.html">Programs</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/validator.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/SmoothScroll.js"></script>
+    <script src="js/parallaxie.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/magiccursor.js"></script>
+    <script src="js/SplitText.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="js/jquery.mb.YTPlayer.min.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/function.js"></script>
+
+    <script>
+      new Swiper(".yt-swiper", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        autoplay: { delay: 2500, disableOnInteraction: false },
+        breakpoints: { 0: { slidesPerView: 1 }, 576: { slidesPerView: 1 } },
+      });
+    </script>
+  </body>
+</html>
