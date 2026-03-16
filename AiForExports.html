@@ -38,8 +38,83 @@
       body {
         background: white;
       }
+
       .company-growth {
         padding-top: 0px;
+      }
+
+      @media (max-width: 768px) {
+        .aife-outcome {
+          font-size: 16px !important;
+        }
+        .aife-outcome strong {
+          font-size: 17px !important;
+          margin-bottom: 0px !important;
+        }
+        .aife-level-info h4 {
+          font-size: 17px !important;
+        }
+        .aife-level-info p {
+          font-size: 15px !important;
+        }
+        .aife-tool-tag {
+          font-size: 14px !important;
+        }
+        .aife-tools {
+          gap: 5px !important;
+        }
+        .aife-level.open .aife-level-body {
+          max-height: 390px !important;
+        }
+        .gni-cta-banner {
+          top: 20px;
+        }
+        .aife-who-tagline {
+          font-size: 16px !important;
+        }
+        .pt-smm-30 {
+          padding: 50px 0 !important;
+        }
+        .mt-smm-20 {
+          margin-top: 30px !important;
+        }
+        .aife-hero-sub {
+          margin-bottom: 30px !important;
+        }
+        .section-title {
+          margin-bottom: 0px !important;
+        }
+        .display-none-sm {
+          display: none !important;
+        }
+        .gni-cta-btn {
+          height: 60px !important;
+          width: 60px !important;
+        }
+        .gni-cta-btn svg {
+          height: 24px !important;
+          width: 24px !important;
+        }
+        .main-footer {
+          margin-top: 70px !important;
+        }
+        .gni-cta-section {
+          margin-top: 60px !important;
+        }
+        .our-faqs {
+          padding: 0 0 !important;
+          margin-top: 70px !important;
+        }
+        .aife-section {
+          padding-top: 50px !important;
+          padding-bottom: 50px !important;
+        }
+        .aife-why-card {
+          padding: 50px 20px !important;
+        }
+        .aife-hero {
+          padding-top: 40px !important;
+        }
       }
     </style>
   </head>
@@ -97,6 +172,15 @@
                       </li>
                       <li><a href="buisness.html">Business Delegation</a></li>
                     </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="https://youtube.com/@exportfundas"
+                      target="_blank"
+                    >
+                      Export Fundas
+                    </a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="contact.html">Contact Us</a>
@@ -211,7 +295,7 @@
       .aife-hero-sub {
         font-size: 17px;
         color: #555;
-        line-height: 1.7;
+        line-height: 1.4;
         max-width: 560px;
         margin-bottom: 36px;
       }
@@ -535,6 +619,7 @@
       @media (max-width: 768px) {
         .aife-levels-grid {
           grid-template-columns: 1fr;
+          padding-bottom: 0px !important;
         }
       }
 
@@ -626,9 +711,9 @@
 
     <div class="aife-page">
       <!-- ── HERO ── -->
-      <section class="aife-hero">
+      <section class="aife-hero pt-smm-30">
         <div class="container">
-          <div class="row align-items-center g-5">
+          <div class="row align-items-center mt-smm-20">
             <div class="col-lg-5 wow fadeInUp">
               <div class="section-title">
                 <h3 class="wow fadeInUp">AI for Exports</h3>
@@ -638,10 +723,10 @@
                 </h2>
               </div>
             </div>
-            <div class="col-lg-1"></div>
+            <div class="col-lg-1 display-none-sm"></div>
 
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
-              <p class="aife-hero-sub">
+              <p class="aife-hero-sub mt-4 mt-md-0">
                 From market research to buyer conversion and automation, the 6
                 Level Growth Program helps you find the right buyers, close real
                 export orders, and scale without increasing manpower.
@@ -779,7 +864,7 @@
 
             <div class="col-lg-7">
               <!-- Company Growth Content Start -->
-              <div class="company-growth-content">
+              <div class="company-growth-content mt-3 mt-md-0">
                 <!-- Section Title Start -->
                 <div class="section-title">
                   <h3 class="wow fadeInUp">introduction</h3>
@@ -803,8 +888,8 @@
                   class="company-growth-btn wow fadeInUp"
                   data-wow-delay="0.75s"
                 >
-                  <a href="contact.html" class="btn-default"
-                    >👉 Talk to an Export Growth Advisor</a
+                  <a href="contact.html" class="btn-default mt-4 mt-md-0"
+                    >Talk to an Export Growth Advisor</a
                   >
                 </div>
                 <!-- Company Growth Button End -->
@@ -848,7 +933,10 @@
       </section>
 
       <!-- ── TRAINING PROGRAM ── -->
-      <section class="aife-section aife-program" style="padding-top: 0px">
+      <section
+        class="aife-section aife-program"
+        style="padding-top: 0px; padding-bottom: 0px"
+      >
         <div class="container">
           <div
             class="gni-cta-banner wow fadeInUp"
@@ -1017,7 +1105,10 @@
 
           <div class="aife-levels-grid">
             <!-- Level 1 -->
-            <div class="aife-level wow fadeInUp" data-wow-delay="0.05s">
+            <div
+              class="aife-level wow fadeInUp mt-4 mt-md-0"
+              data-wow-delay="0.05s"
+            >
               <div class="aife-level-head" onclick="toggleLevel(this)">
                 <div class="aife-level-num">1</div>
                 <div class="aife-level-info">
@@ -1374,331 +1465,326 @@
             </div>
           </div>
         </div>
-        <section class="gni-cta-section" style="margin-top: 120px">
-          <div class="container">
-            <div class="gni-cta-banner">
-              <!-- Left: Main Headline -->
-              <div class="gni-cta-headline">
-                <h2>Ready to Grow Your Export Business with AI?</h2>
-              </div>
-
-              <!-- Center: Subheadline -->
-              <div class="gni-cta-sub">
-                <p class="gni-cta-sub-title">Limited Seats Available!</p>
-                <p class="gni-cta-sub-text">
-                  Join the 6-Level Growth Program and take your export business
-                  to the next level with AI-powered strategies.
-                </p>
-              </div>
-
-              <!-- Right: Arrow Button -->
-              <div class="gni-cta-action">
-                <a
-                  href="contact.html"
-                  class="gni-cta-btn"
-                  aria-label="Join the 6 – Level Growth Program Today"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <line x1="7" y1="17" x2="17" y2="7"></line>
-                    <polyline points="7 7 17 7 17 17"></polyline>
-                  </svg>
-                </a>
-                <span class="gni-cta-btn-label"
-                  >Join the 6 – Level Growth Program Today</span
-                >
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <style>
-          /* ── Section wrapper ── */
-
-          /* ── Banner card ── */
-          .gni-cta-banner {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 30px;
-            background: #0046db;
-            border-radius: 24px;
-            padding: 50px 55px;
-          }
-
-          /* ── Headline ── */
-          .gni-cta-headline {
-            flex: 0 0 auto;
-            max-width: 380px;
-          }
-
-          .gni-cta-headline h2 {
-            font-size: 42px;
-            font-weight: 800;
-            line-height: 1.15;
-            color: white;
-            margin: 0;
-            font-family: "Instrument Sans", sans-serif;
-          }
-
-          /* ── Sub text ── */
-          .gni-cta-sub {
-            flex: 1;
-            padding: 0 40px;
-            border-left: 1px solid rgba(255, 255, 255, 0.25);
-          }
-
-          .gni-cta-sub-title {
-            font-size: 22px;
-            font-weight: 700;
-            color: white;
-            margin-bottom: 6px;
-          }
-
-          .gni-cta-sub-text {
-            font-size: 18px;
-            font-weight: 500;
-            color: white;
-            opacity: 0.8;
-            margin: 0;
-            line-height: 1.6;
-          }
-
-          /* ── Action: arrow button + label ── */
-          .gni-cta-action {
-            flex: 0 0 auto;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 12px;
-          }
-
-          .gni-cta-btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 80px;
-            height: 80px;
-            border: 2px solid white;
-            border-radius: 18px;
-            color: white;
-            transition:
-              background 0.3s ease,
-              color 0.3s ease;
-            flex-shrink: 0;
-          }
-
-          .gni-cta-btn svg {
-            width: 34px;
-            height: 34px;
-            transition: transform 0.3s ease;
-          }
-
-          .gni-cta-btn:hover {
-            background: white;
-            color: #0046db;
-          }
-
-          .gni-cta-btn:hover svg {
-            transform: rotate(45deg);
-            stroke: #0046db;
-          }
-
-          .gni-cta-btn-label {
-            font-size: 12px;
-            font-weight: 600;
-            color: white;
-            text-align: center;
-            max-width: 90px;
-            line-height: 1.4;
-            opacity: 0.75;
-          }
-
-          /* ── Responsive ── */
-          @media (max-width: 991px) {
-            .gni-cta-banner {
-              flex-direction: column;
-              align-items: flex-start;
-              padding: 40px 30px;
-            }
-
-            .gni-cta-headline h2 {
-              font-size: 34px;
-            }
-
-            .gni-cta-sub {
-              border-left: none;
-              border-top: 1px solid rgba(255, 255, 255, 0.25);
-              padding: 20px 0 0;
-              width: 100%;
-            }
-
-            .gni-cta-action {
-              flex-direction: row;
-              align-items: center;
-              gap: 16px;
-              width: 100%;
-            }
-
-            .gni-cta-btn-label {
-              max-width: 200px;
-              font-size: 14px;
-            }
-          }
-
-          @media (max-width: 575px) {
-            .gni-cta-headline h2 {
-              font-size: 28px;
-            }
-
-            .gni-cta-banner {
-              padding: 30px 20px;
-            }
-          }
-        </style>
-        <footer class="main-footer bg-section" style="margin-top: 120px">
-          <div class="container">
-            <div class="row align-items-start footer-info-row">
-              <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-                <div class="footer-contact-info">
-                  <h3>Contact Information</h3>
-                  <p>
-                    <i class="fa-regular fa-envelope footer-info-icon"></i>
-                    <a
-                      href="mailto:jagat@globaljagat.com"
-                      class="footer-nav-link"
-                      >jagat@globaljagat.com</a
-                    >
-                  </p>
-                  <p>
-                    <i class="fa-solid fa-phone footer-info-icon"></i>
-                    <span>+91 98255 06441</span>
-                  </p>
-                  <p>
-                    <i class="fa-solid fa-location-dot footer-info-icon"></i>
-                    <span
-                      >1001, 10th floor, Safal Prelude, Prahladnagar, Ahmedabad,
-                      Gujarat - India</span
-                    >
-                  </p>
-                </div>
-              </div>
-
-              <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                <div class="footer-contact-info"><h3>Programs</h3></div>
-                <ul class="footer-nav-list">
-                  <li>
-                    <a href="programs.html" class="footer-nav-link"
-                      >All Programs</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="product-export.html"
-                      class="footer-nav-link footer-nav-sub"
-                      >— Product Export</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="product-procedure.html"
-                      class="footer-nav-link footer-nav-sub"
-                      >— Export Procedures & Documentation</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="service-export.html"
-                      class="footer-nav-link footer-nav-sub"
-                      >— Services Export</a
-                    >
-                  </li>
-                </ul>
-              </div>
-
-              <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
-                <div class="footer-contact-info">
-                  <h3>Seminars & Delegation</h3>
-                </div>
-                <ul class="footer-nav-list">
-                  <li>
-                    <a href="vibrantinar.html" class="footer-nav-link"
-                      >Vibrantinars</a
-                    >
-                  </li>
-                  <li>
-                    <a href="seminarList.html" class="footer-nav-link"
-                      >List of Seminars</a
-                    >
-                  </li>
-                  <li>
-                    <a href="AiForExports.html" class="footer-nav-link"
-                      >AI for Exports</a
-                    >
-                  </li>
-                  <li>
-                    <a href="buisness.html" class="footer-nav-link"
-                      >Business Delegation</a
-                    >
-                  </li>
-                </ul>
-              </div>
-
-              <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                <div class="footer-contact-info"><h3>Follow Us</h3></div>
-                <div class="footer-social-links">
-                  <ul>
-                    <li>
-                      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="footer-copyright">
-              <div class="row align-items-center">
-                <div class="col-md-6">
-                  <div class="footer-copyright-text footer-copyright-left">
-                    <p>Copyright &copy; 2024 All Rights Reserved.</p>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="footer-menu">
-                    <ul class="footer-menu-right">
-                      <li><a href="index.html">Home</a></li>
-                      <li><a href="about.html">About Us</a></li>
-                      <li><a href="programs.html">Programs</a></li>
-                      <li><a href="contact.html">Contact Us</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </footer>
       </div>
     </div>
+    <section class="gni-cta-section" style="margin-top: 120px">
+      <div class="container">
+        <div class="gni-cta-banner">
+          <!-- Left: Main Headline -->
+          <div class="gni-cta-headline">
+            <h2>Ready to Grow Your Export Business with AI?</h2>
+          </div>
 
+          <!-- Center: Subheadline -->
+          <div class="gni-cta-sub">
+            <p class="gni-cta-sub-title">Limited Seats Available!</p>
+            <p class="gni-cta-sub-text">
+              Join the 6-Level Growth Program and take your export business to
+              the next level with AI-powered strategies.
+            </p>
+          </div>
+
+          <!-- Right: Arrow Button -->
+          <div class="gni-cta-action">
+            <a
+              href="contact.html"
+              class="gni-cta-btn"
+              aria-label="Join the 6 – Level Growth Program Today"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
+            <span class="gni-cta-btn-label"
+              >Join the 6 – Level Growth Program Today</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <style>
+      /* ── Section wrapper ── */
+
+      /* ── Banner card ── */
+      .gni-cta-banner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+        background: #0046db;
+        border-radius: 24px;
+        padding: 50px 55px;
+      }
+
+      /* ── Headline ── */
+      .gni-cta-headline {
+        flex: 0 0 auto;
+        max-width: 380px;
+      }
+
+      .gni-cta-headline h2 {
+        font-size: 42px;
+        font-weight: 800;
+        line-height: 1.15;
+        color: white;
+        margin: 0;
+        font-family: "Instrument Sans", sans-serif;
+      }
+
+      /* ── Sub text ── */
+      .gni-cta-sub {
+        flex: 1;
+        padding: 0 40px;
+        border-left: 1px solid rgba(255, 255, 255, 0.25);
+      }
+
+      .gni-cta-sub-title {
+        font-size: 22px;
+        font-weight: 700;
+        color: white;
+        margin-bottom: 6px;
+      }
+
+      .gni-cta-sub-text {
+        font-size: 18px;
+        font-weight: 500;
+        color: white;
+        opacity: 0.8;
+        margin: 0;
+        line-height: 1.4;
+      }
+
+      /* ── Action: arrow button + label ── */
+      .gni-cta-action {
+        flex: 0 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .gni-cta-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80px;
+        height: 80px;
+        border: 2px solid white;
+        border-radius: 18px;
+        color: white;
+        transition:
+          background 0.3s ease,
+          color 0.3s ease;
+        flex-shrink: 0;
+      }
+
+      .gni-cta-btn svg {
+        width: 34px;
+        height: 34px;
+        transition: transform 0.3s ease;
+      }
+
+      .gni-cta-btn:hover {
+        background: white;
+        color: #0046db;
+      }
+
+      .gni-cta-btn:hover svg {
+        transform: rotate(45deg);
+        stroke: #0046db;
+      }
+
+      .gni-cta-btn-label {
+        font-size: 12px;
+        font-weight: 600;
+        color: white;
+        text-align: center;
+        max-width: 90px;
+        line-height: 1.4;
+        opacity: 0.75;
+      }
+
+      /* ── Responsive ── */
+      @media (max-width: 991px) {
+        .gni-cta-banner {
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 40px 30px;
+        }
+
+        .gni-cta-headline h2 {
+          font-size: 34px;
+        }
+
+        .gni-cta-sub {
+          border-left: none;
+          border-top: 1px solid rgba(255, 255, 255, 0.25);
+          padding: 20px 0 0;
+          width: 100%;
+        }
+
+        .gni-cta-action {
+          flex-direction: row;
+          align-items: center;
+          gap: 16px;
+          width: 100%;
+        }
+
+        .gni-cta-btn-label {
+          max-width: 200px;
+          font-size: 14px;
+        }
+      }
+
+      @media (max-width: 575px) {
+        .gni-cta-headline h2 {
+          font-size: 28px;
+        }
+
+        .gni-cta-banner {
+          padding: 30px 20px;
+        }
+      }
+    </style>
+    <footer class="main-footer bg-section" style="margin-top: 120px">
+      <div class="container">
+        <div class="row align-items-start footer-info-row">
+          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+            <div class="footer-contact-info">
+              <h3>Contact Information</h3>
+              <p>
+                <i class="fa-regular fa-envelope footer-info-icon"></i>
+                <a href="mailto:jagat@globaljagat.com" class="footer-nav-link"
+                  >jagat@globaljagat.com</a
+                >
+              </p>
+              <p>
+                <i class="fa-solid fa-phone footer-info-icon"></i>
+                <span>+91 98255 06441</span>
+              </p>
+              <p>
+                <i class="fa-solid fa-location-dot footer-info-icon"></i>
+                <span
+                  >1001, 10th floor, Safal Prelude, Prahladnagar, Ahmedabad,
+                  Gujarat - India</span
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <div class="footer-contact-info"><h3>Programs</h3></div>
+            <ul class="footer-nav-list">
+              <li>
+                <a href="programs.html" class="footer-nav-link">All Programs</a>
+              </li>
+              <li>
+                <a
+                  href="product-export.html"
+                  class="footer-nav-link footer-nav-sub"
+                  >— Product Export</a
+                >
+              </li>
+              <li>
+                <a
+                  href="product-procedure.html"
+                  class="footer-nav-link footer-nav-sub"
+                  >— Export Procedures & Documentation</a
+                >
+              </li>
+              <li>
+                <a
+                  href="service-export.html"
+                  class="footer-nav-link footer-nav-sub"
+                  >— Services Export</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+            <div class="footer-contact-info">
+              <h3>Seminars & Delegation</h3>
+            </div>
+            <ul class="footer-nav-list">
+              <li>
+                <a href="vibrantinar.html" class="footer-nav-link"
+                  >Vibrantinars</a
+                >
+              </li>
+              <li>
+                <a href="seminarList.html" class="footer-nav-link"
+                  >List of Seminars</a
+                >
+              </li>
+              <li>
+                <a href="AiForExports.html" class="footer-nav-link"
+                  >AI for Exports</a
+                >
+              </li>
+              <li>
+                <a href="buisness.html" class="footer-nav-link"
+                  >Business Delegation</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <div class="footer-contact-info"><h3>Follow Us</h3></div>
+            <div class="footer-social-links">
+              <ul>
+                <li>
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-copyright">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <div class="footer-copyright-text footer-copyright-left">
+                <p>Copyright &copy; 2024 All Rights Reserved.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="footer-menu">
+                <ul class="footer-menu-right">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="programs.html">Programs</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <!-- CTA BANNER -->
 
     <!-- Footer -->
@@ -1759,4 +1845,3 @@
     </script>
   </body>
 </html>
-

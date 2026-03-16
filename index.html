@@ -42,6 +42,9 @@
       rel="stylesheet"
     />
     <style>
+      .hero {
+        padding: 50px 30px 100px;
+      }
       body {
         background-color: unset;
       }
@@ -53,6 +56,10 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
+      }
+      .company-growth-item p {
+        font-size: 18px;
+        color: #a6a5a5;
       }
     </style>
   </head>
@@ -110,6 +117,15 @@
                       </li>
                       <li><a href="buisness.html">Business Delegation</a></li>
                     </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="https://youtube.com/@exportfundas"
+                      target="_blank"
+                    >
+                      Export Fundas
+                    </a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="contact.html">Contact Us</a>
@@ -352,7 +368,7 @@
       }
 
       .emg-cta-sub-text {
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 600;
         color: white;
         opacity: 0.8;
@@ -399,11 +415,11 @@
       }
 
       .emg-cta-btn-label {
-        font-size: 11px;
+        font-size: 16px;
         font-weight: 600;
-        color: white;
+        color: white !important;
         text-align: center;
-        max-width: 80px;
+        max-width: 110px;
         line-height: 1.4;
         opacity: 0.75;
       }
@@ -449,7 +465,7 @@
         <div class="row section-row align-items-center">
           <div class="col-lg-6">
             <div class="section-title">
-              <h3 class="wow fadeInUp">AS FEATURED IN / TRUST INDICATORS</h3>
+              <h3 class="wow fadeInUp">AS FEATURED IN</h3>
               <h2 class="wow fadeInUp" data-wow-delay="0.25s">
                 Partnering with top experts <span>and organizations</span>
               </h2>
@@ -466,63 +482,69 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="partner-logo-item">
-                <img src="images/sponsor-1.png" alt="Sponsor 1" />
+                <img src="images/adani.jpeg" alt="Sponsor 1" />
               </div>
             </div>
             <div class="swiper-slide">
               <div class="partner-logo-item">
-                <img src="images/sponsor-2.png" alt="Sponsor 2" />
+                <img src="images/tata.jpeg" alt="Sponsor 2" />
               </div>
             </div>
             <div class="swiper-slide">
               <div class="partner-logo-item">
-                <img src="images/sponsor-3.png" alt="Sponsor 3" />
+                <img src="images/claris_logo.png" alt="Sponsor 3" />
               </div>
             </div>
             <div class="swiper-slide">
               <div class="partner-logo-item">
-                <img src="images/sponsor-4.png" alt="Sponsor 4" />
+                <img src="images/tvd.jpeg" alt="Sponsor 4" />
               </div>
             </div>
             <div class="swiper-slide">
               <div class="partner-logo-item">
-                <img src="images/sponsor-5.png" alt="Sponsor 5" />
+                <img src="images/intas.jpeg" alt="Sponsor 5" />
               </div>
             </div>
             <div class="swiper-slide">
               <div class="partner-logo-item">
-                <img src="images/sponsor-6.png" alt="Sponsor 6" />
+                <img
+                  src="images/state-bank-india-maitech-safe-and-secure-now-2.png"
+                  alt="Sponsor 6"
+                />
               </div>
             </div>
             <!-- duplicated for loop -->
             <div class="swiper-slide">
               <div class="partner-logo-item">
-                <img src="images/sponsor-1.png" alt="Sponsor 1" />
+                <img
+                  src="images/IFC-WBG-vertical-RGB-high_0.png"
+                  alt="Sponsor 1"
+                />
               </div>
             </div>
             <div class="swiper-slide">
               <div class="partner-logo-item">
-                <img src="images/sponsor-2.png" alt="Sponsor 2" />
+                <img src="images/images.png" alt="Sponsor 2" />
               </div>
             </div>
             <div class="swiper-slide">
               <div class="partner-logo-item">
-                <img src="images/sponsor-3.png" alt="Sponsor 3" />
+                <img src="images/india.png" alt="Sponsor 3" />
               </div>
             </div>
             <div class="swiper-slide">
               <div class="partner-logo-item">
-                <img src="images/sponsor-4.png" alt="Sponsor 4" />
+                <img src="images/dai.png" alt="Sponsor 4" />
               </div>
             </div>
             <div class="swiper-slide">
               <div class="partner-logo-item">
-                <img src="images/sponsor-5.png" alt="Sponsor 5" />
+                <img src="images/nirma.png" alt="Sponsor 5" />
               </div>
             </div>
             <div class="swiper-slide">
               <div class="partner-logo-item">
-                <img src="images/sponsor-6.png" alt="Sponsor 6" />
+                <img src="images/UNIDO_Logo.svg.png" alt="Sponsor 6" />
               </div>
             </div>
           </div>
@@ -550,7 +572,7 @@
         width: 100%;
         height: 105px;
         object-fit: contain;
-        filter: grayscale(100%);
+        /* filter: grayscale(100%); */
         /* opacity: 0.65; */
         transition:
           filter 0.3s,
@@ -614,7 +636,7 @@
       }
 
       .pio-eyebrow {
-        font-size: 11px;
+        font-size: 15px;
         font-weight: 600;
         letter-spacing: 0.16em;
         text-transform: uppercase;
@@ -635,14 +657,16 @@
       }
 
       .pio-body {
-        font-size: 17px;
-        line-height: 1.6;
-        color: #8f8f8f;
+        font-size: 19px;
+        line-height: 1.4;
+        color: #455557;
         font-weight: 400;
+        letter-spacing: 0.02em;
       }
 
       .pio-body p + p {
-        margin-top: 16px;
+        margin-top: 10px;
+        margin-bottom: 10px;
       }
       /* .pio-body strong {
         color: var(--ink);
@@ -670,14 +694,14 @@
       }
 
       .pio-stat-label {
-        font-size: 16px;
+        font-size: 18px;
         color: var(--muted);
         font-weight: 400;
       }
 
       .pio-tagline {
         text-align: right;
-        font-size: 16px;
+        font-size: 17px;
         color: var(--muted);
         line-height: 1.6;
         border-left: 1px solid var(--rule);
@@ -711,7 +735,7 @@
     <section class="pio-wrap" style="background-color: #f1f1f1">
       <div class="container">
         <div class="row pio-grid align-items-center g-5">
-          <!-- Left: Headline + arrow + image -->
+          <!-- Left: Headline + image -->
           <div class="col-lg-6 wow fadeInUp">
             <div class="section-title">
               <h3 class="wow fadeInUp">Our Vision</h3>
@@ -730,16 +754,12 @@
 
           <!-- Right: Body -->
           <div
-            class="col-lg-1"
-            style="display: flex; align-items: center; justify-content: center"
-          >
-            <img src="images/arrow.svg" alt="" style="width: 100px" />
-          </div>
-          <div
-            class="col-lg-5 wow fadeInUp"
+            class="col-lg-6 wow fadeInUp"
             data-wow-delay="0.3s"
-            style="padding-top: 8px"
+            style="position: relative; padding-top: 8px"
           >
+            <img src="images/arrow.svg" alt="" class="pio-arrow-deco" />
+
             <p class="pio-eyebrow">28 Years of Excellence</p>
             <div class="pio-body">
               <p>Here's what drives me every single day.</p>
@@ -763,12 +783,85 @@
                 annually. But they all started exactly where you are right now.
               </p>
             </div>
+
+            <!-- ADD HERE -->
+            <div class="ep-mentor-downloads">
+              <a
+                href="images/Document/jagat-shah-profile.pdf"
+                download="Dr. Jagat Shah Profile.pdf"
+                target="_blank"
+                class="ep-mentor-dl-btn"
+              >
+                <i class="fa-solid fa-file-pdf"></i> Download Dr. Jagat Shah's
+                Profile
+              </a>
+              <a
+                href="images/Document/business-summary.jpeg"
+                download="Business Summary Poster.jpeg"
+                target="_blank"
+                class="ep-mentor-dl-btn ep-mentor-dl-btn--outline"
+              >
+                <i class="fa-solid fa-image"></i> Download Business Summary
+                Poster
+              </a>
+            </div>
+            <style>
+              .ep-mentor-downloads {
+                display: flex;
+                gap: 12px;
+                flex-wrap: wrap;
+                margin-top: 24px;
+              }
+              .ep-mentor-dl-btn {
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                background: #0046db;
+                color: white;
+                font-size: 14px;
+                font-weight: 600;
+                padding: 12px 20px;
+                border-radius: 10px;
+                text-decoration: none;
+                transition: background 0.3s ease;
+              }
+              .ep-mentor-dl-btn:hover {
+                background: #1b222f;
+                color: white;
+              }
+              .ep-mentor-dl-btn--outline {
+                background: transparent;
+                border: 1.5px solid #455557;
+                color: #455557;
+              }
+              .ep-mentor-dl-btn--outline:hover {
+                background: #0046db;
+                color: white;
+                border-color: #0046db;
+              }
+            </style>
           </div>
         </div>
-
         <!-- Stats Row -->
       </div>
     </section>
+
+    <style>
+      .pio-arrow-deco {
+        position: absolute;
+        left: -100px;
+        top: 40%;
+        width: 80px;
+        transform: translateY(-50%);
+        opacity: 0.7;
+      }
+
+      @media (max-width: 991px) {
+        .pio-arrow-deco {
+          display: none;
+        }
+      }
+    </style>
     <section style="background: #0046db; padding: 60px 0">
       <div class="container">
         <div class="row align-items-end pio-stats" style="border-bottom: none">
@@ -777,7 +870,7 @@
             style="border-right-color: rgba(255, 255, 255, 0.15)"
           >
             <div class="pio-stat-number" style="color: #fff">6,900+</div>
-            <div class="pio-stat-label" style="color: rgba(255, 255, 255, 0.5)">
+            <div class="pio-stat-label" style="color: white">
               Businesses trained
             </div>
           </div>
@@ -787,7 +880,7 @@
             style="border-right-color: rgba(255, 255, 255, 0.15)"
           >
             <div class="pio-stat-number" style="color: #fff">196+</div>
-            <div class="pio-stat-label" style="color: rgba(255, 255, 255, 0.5)">
+            <div class="pio-stat-label" style="color: white">
               Industries covered
             </div>
           </div>
@@ -797,7 +890,7 @@
             style="border-right-color: rgba(255, 255, 255, 0.15)"
           >
             <div class="pio-stat-number" style="color: #fff">3,600+</div>
-            <div class="pio-stat-label" style="color: rgba(255, 255, 255, 0.5)">
+            <div class="pio-stat-label" style="color: white">
               Active exporters today
             </div>
           </div>
@@ -810,7 +903,7 @@
               style="color: var(--accent); display: block; margin-bottom: 6px"
               >Your global journey starts here.</strong
             >
-            <span style="color: rgba(255, 255, 255, 0.6)"
+            <span style="color: white"
               >Good training isn't just about knowledge. It's about results.
               Here's ours.</span
             >
@@ -908,11 +1001,10 @@
             >
               <p
                 style="
-                  font-size: 11px;
+                  font-size: 16px;
                   font-weight: 600;
-                  letter-spacing: 0.2em;
                   text-transform: uppercase;
-                  color: #888;
+                  color: #a6a5a5;
                   margin-bottom: 20px;
                 "
               >
@@ -2760,11 +2852,11 @@
       }
 
       .gni-cta-btn-label {
-        font-size: 12px;
+        font-size: 16px;
         font-weight: 600;
         color: white;
         text-align: center;
-        max-width: 90px;
+        max-width: 110px;
         line-height: 1.4;
         opacity: 0.75;
       }
@@ -2818,7 +2910,10 @@
         font-size: 15px;
       }
     </style>
-    <footer class="main-footer bg-section" style="margin-top: 120px">
+    <footer
+      class="main-footer bg-section footer-border-none"
+      style="margin-top: 120px"
+    >
       <div class="container">
         <div class="row align-items-start footer-info-row">
           <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
