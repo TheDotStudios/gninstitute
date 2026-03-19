@@ -1,9 +1,3 @@
-/* ----------------------------------------------------------------------------------------
-* Author        : Awaiken
-* Template Name : Infine - Life and Business Coach HTML Template
-* File          : CSS File
-* Version       : 1.0
-* ---------------------------------------------------------------------------------------- */
 /* INDEX
 ----------------------------------------------------------------------------------------
 01. Global Variables
@@ -419,7 +413,6 @@ body {
   font-size: 14px;
   font-weight: 500;
 }
-
 /************************************/
 /**** 	   03. Header css		 ****/
 /************************************/
@@ -482,6 +475,7 @@ header.main-header .header-sticky.active .container-fluid::before {
   width: 100%;
   max-width: 1560px;
   margin: 0 auto;
+  /* restored original padding — File 1 reduced to 15px which shifted mobile layout */
   padding: 20px 0;
   align-items: center;
 }
@@ -489,17 +483,35 @@ header.main-header .header-sticky.active .container-fluid::before {
 .navbar-brand {
   padding: 0;
   margin: 0;
+  /* flex-shrink added for desktop centering without breaking mobile */
+  flex-shrink: 0;
+}
+
+/* ── Main menu vertical center ── */
+/* CRITICAL FIX: removed "display: flex !important" from File 1 — it
+   prevented SlickNav from hiding .navbar-collapse on mobile.
+   Using flex only on desktop via media query below. */
+.collapse.navbar-collapse.main-menu {
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  margin-left: 20px;
 }
 
 .main-menu .nav-menu-wrapper {
   flex: 1;
-  text-align: left;
-  /* margin-left: 40px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* restored File 2's left margin for spacing; centering done by justify-content */
+  margin-left: 40px;
+  text-align: center;
 }
 
 .main-menu .nav-menu-wrapper > ul {
   align-items: center;
   display: inline-flex;
+  flex-wrap: nowrap;
 }
 
 .main-menu ul li {
@@ -508,12 +520,13 @@ header.main-header .header-sticky.active .container-fluid::before {
 }
 
 .main-menu ul li a {
-  font-size: 16px;
+  font-size: 16px !important;
   font-weight: 700;
-  padding: 15px !important;
+  padding: 10px 15px !important;
   color: var(--white-color);
   text-transform: capitalize;
   transition: all 0.3s ease-in-out;
+  white-space: nowrap;
 }
 
 .main-menu ul li.submenu > a:after {
@@ -538,13 +551,18 @@ header.main-header .header-sticky.active .container-fluid::before {
   padding: 0;
   margin: 0;
   list-style: none;
-  width: 260px; /* was 230px — fixes wrapping */
+  width: 260px;
   border-radius: 16px;
   position: absolute;
   left: 0;
   top: 100%;
   margin-top: 8px;
-  background: #1b222f; /* was #0046db — dark instead of blue */
+  /* restored File 2's gradient background — File 1 used flat #1b222f */
+  background: linear-gradient(
+    263deg,
+    var(--accent-color) 0.16%,
+    var(--dark-color) 99.84%
+  );
   text-align: left;
   transition: all 0.3s ease-in-out;
   z-index: 999;
@@ -560,7 +578,12 @@ header.main-header .header-sticky.active .container-fluid::before {
   transform-origin: left top;
   transform: scaleX(0.8);
   border-radius: 16px;
-  background: #1b222f; /* same dark bg */
+  /* restored gradient to match File 2 */
+  background: linear-gradient(
+    263deg,
+    var(--accent-color) 0.16%,
+    var(--dark-color) 99.84%
+  );
 }
 
 .main-menu ul li:hover > ul {
@@ -573,7 +596,7 @@ header.main-header .header-sticky.active .container-fluid::before {
 .main-menu ul ul li:hover > ul {
   visibility: visible;
   opacity: 1;
-  transform: scaleX(1); /* side menu opens on X */
+  transform: scaleX(1);
   padding: 5px 0;
 }
 
@@ -583,16 +606,17 @@ header.main-header .header-sticky.active .container-fluid::before {
   transition: all 0.2s ease;
   display: block;
   font-size: 15px;
+  white-space: normal;
 }
 
 .main-menu ul ul li a:hover,
 .main-menu ul ul li a:focus {
   color: #ffffff;
-  background-color: rgba(255, 255, 255, 0.08); /* subtle white hover */
+  background-color: rgba(255, 255, 255, 0.08);
   padding: 10px 20px 10px 24px !important;
 }
 
-/* Arrow for nested submenu */
+/* ── Arrow for nested submenu ── */
 .main-menu ul li.submenu ul li.submenu > a:after {
   content: "\f105";
   float: right;
@@ -611,13 +635,6 @@ header.main-header .header-sticky.active .container-fluid::before {
   transition: all 0.3s ease-in-out;
 }
 
-.main-menu ul li:hover > ul {
-  visibility: visible;
-  opacity: 1;
-  transform: scaleY(1);
-  padding: 5px 0;
-}
-
 .main-menu ul ul li a:hover,
 .main-menu ul ul li a:focus {
   color: white;
@@ -625,11 +642,16 @@ header.main-header .header-sticky.active .container-fluid::before {
   padding: 8px 20px 8px 23px !important;
 }
 
+/* ── Header Buttons ── */
 .header-btn {
+  display: inline-flex !important;
   align-items: center;
+  flex-shrink: 0;
+  margin-left: 15px;
 }
 
 .btn-phone {
+  /* restored File 2 sizing — File 1 reduced to 14px / 15px margin */
   font-size: 16px;
   font-weight: 700;
   line-height: normal;
@@ -638,6 +660,7 @@ header.main-header .header-sticky.active .container-fluid::before {
   display: inline-flex;
   align-items: center;
   transition: all 0.4s ease-in-out;
+  white-space: nowrap;
 }
 
 .btn-phone:hover {
@@ -646,6 +669,7 @@ header.main-header .header-sticky.active .container-fluid::before {
 
 .btn-phone i {
   color: var(--white-color);
+  /* restored File 2 icon size — File 1 reduced to 16px */
   font-size: 20px;
   margin-right: 15px;
   transition: all 0.4s ease-in-out;
@@ -655,6 +679,7 @@ header.main-header .header-sticky.active .container-fluid::before {
   color: var(--accent-color);
 }
 
+/* ── Responsive Toggle ── */
 .responsive-menu,
 .navbar-toggle {
   display: none;
@@ -666,7 +691,8 @@ header.main-header .header-sticky.active .container-fluid::before {
 }
 
 .slicknav_btn {
-  background: #0046db;
+  /* restored File 2's gradient button — File 1 used flat #0046db */
+  background-color: #0046db;
   padding: 0;
   display: flex;
   align-items: center;
@@ -721,6 +747,7 @@ header.main-header .header-sticky.active .container-fluid::before {
   position: absolute;
   width: 100%;
   padding: 0;
+  /* restored gradient for mobile menu — File 1 used flat blue */
   background-color: #0046db;
 }
 
@@ -750,7 +777,7 @@ header.main-header .header-sticky.active .container-fluid::before {
 .slicknav_nav a:focus,
 .slicknav_nav .slicknav_row:hover {
   background-color: transparent;
-  color: var(--primary-color);
+  color: white;
 }
 
 .slicknav_menu ul ul li a {
@@ -779,6 +806,18 @@ header.main-header .header-sticky.active .container-fluid::before {
   color: var(--primary-color);
 }
 
+/* ── Desktop-only: enable flex centering on navbar-collapse ── */
+/* This applies the File 1 centering improvements ONLY on desktop,
+   so SlickNav can still hide/show .navbar-collapse on mobile */
+@media (min-width: 992px) {
+  .collapse.navbar-collapse.main-menu {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    margin-left: 20px;
+  }
+}
 /************************************/
 /***        04. Hero css	      ***/
 /************************************/
@@ -790,7 +829,7 @@ header.main-header .header-sticky.active .container-fluid::before {
   background-position: center center;
   background-size: cover;
   padding: 120px 30px 100px;
-  margin-top: -120px;
+  margin-top: -140px;
   overflow: hidden;
 }
 
@@ -2494,7 +2533,7 @@ header.main-header .header-sticky.active .container-fluid::before {
   background-size: cover;
   overflow: hidden;
   padding: 250px 0 140px;
-  margin-top: -120px;
+  margin-top: -140px;
 }
 
 .page-header:before {
@@ -3367,12 +3406,7 @@ header.main-header .header-sticky.active .container-fluid::before {
 }
 
 .post-btn a {
-  background-image: linear-gradient(
-    to right,
-    var(--dark-color) 0%,
-    var(--accent-color) 50%,
-    var(--dark-color) 100%
-  );
+  background: #0046db;
   background-size: 200% auto;
   height: 50px;
   width: 50px;
@@ -6387,5 +6421,15 @@ header.main-header .header-sticky.active .container-fluid::before {
 
   .page-header-content .breadcrumb {
     justify-content: center;
+  }
+  .navbar {
+    padding: 0 0 !important;
+  }
+  .navbar-brand {
+    position: relative;
+    top: 8px;
+  }
+  .main-header .container-fluid::before {
+    border-bottom: 0px !important;
   }
 }

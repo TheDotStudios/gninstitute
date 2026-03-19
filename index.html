@@ -297,7 +297,7 @@
         <nav class="navbar navbar-expand-lg">
           <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
-              <img src="images/logo.svg" alt="Logo" />
+              <img src="images/LOGO.png" alt="Logo" />
             </a>
             <div class="collapse navbar-collapse main-menu">
               <div class="nav-menu-wrapper">
@@ -343,9 +343,25 @@
                       class="nav-link"
                       href="https://youtube.com/@exportfundas"
                       target="_blank"
+                      >Export Fundas</a
                     >
-                      Export Fundas
-                    </a>
+                  </li>
+                  <li class="nav-item submenu">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                    <ul>
+                      <li>
+                        <a href="blog1.html">How to Enter Global Markets</a>
+                      </li>
+                      <li>
+                        <a href="blog2.html">Service Exports Opportunity</a>
+                      </li>
+                      <li>
+                        <a href="blog3.html">Convert International Leads</a>
+                      </li>
+                      <li>
+                        <a href="blog4.html">Digital Strategies for Exports</a>
+                      </li>
+                    </ul>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="contact.html">Contact Us</a>
@@ -1008,24 +1024,30 @@
             <!-- ADD HERE -->
             <div class="ep-mentor-downloads">
               <a
+                target="_blank"
+                href="https://jagat.dayschedule.com/1-on-1-consultation-with-jagat-shah"
+                class="ep-mentor-dl-btn ep-mentor-dl-btn--outline"
+              >
+                Book Appointment
+              </a>
+              <a
                 href="images/Document/jagat-shah-profile.pdf"
                 download="Dr. Jagat Shah Profile.pdf"
                 target="_blank"
                 class="ep-mentor-dl-btn"
               >
-                <i class="fa-solid fa-file-pdf"></i> Download Dr. Jagat Shah's
-                Profile
+                Download Profile
               </a>
               <a
                 href="images/Document/business-summary.jpeg"
                 download="Business Summary Poster.jpeg"
                 target="_blank"
-                class="ep-mentor-dl-btn ep-mentor-dl-btn--outline"
+                class="ep-mentor-dl-btn ep-mentor-dl-btn--black"
               >
-                <i class="fa-solid fa-image"></i> Download Business Summary
-                Poster
+                Business Summary
               </a>
             </div>
+
             <style>
               .ep-mentor-downloads {
                 display: flex;
@@ -1036,7 +1058,9 @@
               .ep-mentor-dl-btn {
                 display: inline-flex;
                 align-items: center;
+                justify-content: center;
                 gap: 8px;
+                width: 180px;
                 background: #0046db;
                 color: white;
                 font-size: 14px;
@@ -1044,12 +1068,16 @@
                 padding: 12px 20px;
                 border-radius: 10px;
                 text-decoration: none;
-                transition: background 0.3s ease;
+                transition: all 0.3s ease;
+                box-sizing: border-box;
+                border: 1.5px solid transparent;
               }
               .ep-mentor-dl-btn:hover {
                 background: #1b222f;
                 color: white;
               }
+
+              /* First - Outline */
               .ep-mentor-dl-btn--outline {
                 background: transparent;
                 border: 1.5px solid #455557;
@@ -1058,6 +1086,16 @@
               .ep-mentor-dl-btn--outline:hover {
                 background: #0046db;
                 color: white;
+                border-color: #0046db;
+              }
+
+              /* Third - Black */
+              .ep-mentor-dl-btn--black {
+                background: #1b222f;
+                border-color: #1b222f;
+              }
+              .ep-mentor-dl-btn--black:hover {
+                background: #0046db;
                 border-color: #0046db;
               }
             </style>
@@ -1822,24 +1860,18 @@
         cursor: pointer;
       }
     </style>
-    <div class="vid-section">
+    <!-- <div class="vid-section">
       <div class="container">
-        <!-- Title -->
         <div class="section-title mb-4">
           <h2 class="wow fadeInUp">
             What They Say About Our <br /><span>Export Training</span>
           </h2>
         </div>
 
-        <!-- Grid Row — fixed height 440px -->
         <div class="row g-3" style="height: 540px">
-          <!-- Left large -->
           <div class="col-lg-7 h-100">
             <div class="vid-thumb h-100">
-              <img
-                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800&q=70"
-                alt="Parirajan Muthalagu"
-              />
+              <img src="images/v1.jpg" alt="Parirajan Muthalagu" />
               <div class="play-btn">
                 <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
               </div>
@@ -1848,13 +1880,9 @@
             </div>
           </div>
 
-          <!-- Right two stacked -->
           <div class="col-lg-5 h-100 d-flex flex-column gap-3">
             <div class="vid-thumb flex-fill">
-              <img
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&q=70"
-                alt="Suhas R"
-              />
+              <img src="images/v2.jpg" alt="Suhas R" />
               <div class="play-btn">
                 <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
               </div>
@@ -1863,10 +1891,7 @@
             </div>
 
             <div class="vid-thumb flex-fill">
-              <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=70"
-                alt="Sushobhan Mukherjee"
-              />
+              <img src="images/v3.jpg" alt="Sushobhan Mukherjee" />
               <div class="play-btn">
                 <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
               </div>
@@ -1876,7 +1901,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <section class="gpbp__section">
       <div class="container">
         <div class="gpbp__header">
@@ -1914,10 +1939,7 @@
                 </div>
               </div>
               <div class="gpbp__eimg">
-                <img
-                  src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=300&q=80"
-                  alt="Product export training"
-                />
+                <img src="images/c1.jpg" alt="Product export training" />
               </div>
             </div>
           </div>
@@ -1946,10 +1968,7 @@
                 </div>
               </div>
               <div class="gpbp__eimg">
-                <img
-                  src="https://images.unsplash.com/photo-1568234928966-359c35dd8327?w=300&q=80"
-                  alt="Documentation training"
-                />
+                <img src="images/c2.jpg" alt="Documentation training" />
               </div>
             </div>
           </div>
@@ -1976,10 +1995,7 @@
                 </div>
               </div>
               <div class="gpbp__eimg">
-                <img
-                  src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=300&q=80"
-                  alt="Service export training"
-                />
+                <img src="images/c3.jpg" alt="Service export training" />
               </div>
             </div>
           </div>
@@ -2008,6 +2024,77 @@
         });
       })();
     </script>
+
+    <div>
+      <style>
+        .vid-section {
+          padding: 120px 0;
+          padding-bottom: 150px;
+          background-color: white;
+        }
+
+        .vid-thumb {
+          position: relative;
+          border-radius: 16px;
+          overflow: hidden;
+          background: #042a2d;
+          cursor: pointer;
+        }
+        .vid-thumb img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block;
+          opacity: 0.7;
+          transition: opacity 0.3s;
+        }
+        .vid-thumb:hover img {
+          opacity: 0.5;
+        }
+        .vid-thumb .play-btn {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 56px;
+          height: 56px;
+          border-radius: 50%;
+          background: #0046db;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: transform 0.3s;
+          z-index: 2;
+        }
+        .vid-thumb:hover .play-btn {
+          transform: translate(-50%, -50%) scale(1.1);
+        }
+        .vid-thumb .play-btn svg {
+          width: 20px;
+          height: 20px;
+          fill: white;
+          margin-left: 3px;
+        }
+        .vid-thumb .vid-name {
+          position: absolute;
+          bottom: 30px;
+          left: 16px;
+          color: #fff;
+          font-size: 20px;
+          font-weight: 600;
+          z-index: 2;
+        }
+        .vid-thumb .vid-company {
+          position: absolute;
+          bottom: 14px;
+          left: 16px;
+          color: rgba(255, 255, 255, 0.6);
+          font-size: 11px;
+          z-index: 2;
+        }
+      </style>
+    </div>
+    <!-- Export Blog Section Start -->
     <style>
       .export-blog {
         padding-top: 140px;
@@ -2016,7 +2103,7 @@
 
       .export-blog-grid {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr); /* was 4 */
         gap: 36px;
         margin-top: 48px;
       }
@@ -2103,7 +2190,7 @@
       }
 
       .export-blog-title a:hover {
-        color: #5555 50;
+        color: #0046db;
       }
 
       .export-blog-excerpt {
@@ -2118,96 +2205,44 @@
         font-weight: 500;
         color: white;
         text-decoration: none;
-        transition: opacity 0.2s;
+        transition: background-color 0.2s;
         background-color: #0046db;
         padding: 13px 20px;
+        border-radius: 6px;
       }
+
       .export-blog-link:hover {
         background-color: #1b222f;
         color: white;
       }
 
+      @media (max-width: 1200px) {
+        .export-blog-grid {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 28px;
+        }
+      }
+
       @media (max-width: 991px) {
+        .export-blog {
+          padding-top: 80px;
+          padding-bottom: 60px;
+        }
         .export-blog-grid {
           grid-template-columns: repeat(2, 1fr);
         }
       }
+
       @media (max-width: 576px) {
         .export-blog-grid {
           grid-template-columns: 1fr;
         }
+        .export-blog-img img {
+          height: 260px;
+        }
       }
     </style>
-    <div>
-      <style>
-        .vid-section {
-          padding: 120px 0;
-          padding-bottom: 150px;
-          background-color: white;
-        }
 
-        .vid-thumb {
-          position: relative;
-          border-radius: 16px;
-          overflow: hidden;
-          background: #042a2d;
-          cursor: pointer;
-        }
-        .vid-thumb img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          display: block;
-          opacity: 0.7;
-          transition: opacity 0.3s;
-        }
-        .vid-thumb:hover img {
-          opacity: 0.5;
-        }
-        .vid-thumb .play-btn {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          width: 56px;
-          height: 56px;
-          border-radius: 50%;
-          background: #0046db;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          transition: transform 0.3s;
-          z-index: 2;
-        }
-        .vid-thumb:hover .play-btn {
-          transform: translate(-50%, -50%) scale(1.1);
-        }
-        .vid-thumb .play-btn svg {
-          width: 20px;
-          height: 20px;
-          fill: white;
-          margin-left: 3px;
-        }
-        .vid-thumb .vid-name {
-          position: absolute;
-          bottom: 30px;
-          left: 16px;
-          color: #fff;
-          font-size: 20px;
-          font-weight: 600;
-          z-index: 2;
-        }
-        .vid-thumb .vid-company {
-          position: absolute;
-          bottom: 14px;
-          left: 16px;
-          color: rgba(255, 255, 255, 0.6);
-          font-size: 11px;
-          z-index: 2;
-        }
-      </style>
-    </div>
-    <!-- Export Blog Section Start -->
     <div class="export-blog">
       <div class="container" style="max-width: 1600px">
         <div class="row section-row align-items-center">
@@ -2222,7 +2257,7 @@
           </div>
           <div class="col-lg-6">
             <div class="section-btn wow fadeInUp" data-wow-delay="0.5s">
-              <a href="#" class="btn-default">view all posts</a>
+              <a href="blog.html" class="btn-default">view all posts</a>
             </div>
           </div>
         </div>
@@ -2231,10 +2266,9 @@
           <!-- Card 1 -->
           <div class="export-blog-card wow fadeInUp">
             <div class="export-blog-img">
-              <img
-                src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=600&q=80"
-                alt="Market Entry Tips"
-              />
+              <a href="blog1.html">
+                <img src="images/b1.jpg" alt="How to Enter Global Markets" />
+              </a>
               <div class="export-blog-date">
                 <span>15</span><small>Jan 25</small>
               </div>
@@ -2242,91 +2276,76 @@
             <div class="export-blog-body">
               <span class="export-blog-tag">Market Entry</span>
               <h3 class="export-blog-title">
-                <a href="#"
-                  >10 Market Entry Tips for Middle East and African Markets</a
+                <a href="blog1.html"
+                  >How to Enter Global Markets and Find the Right Buyers</a
                 >
               </h3>
               <p class="export-blog-excerpt">
-                Discover the most effective strategies to enter high-growth
-                Middle East and African markets and win genuine export orders.
+                Expanding into global markets is no longer limited to large
+                corporations. The key is finding the right buyers who bring
+                consistent and scalable growth.
               </p>
-              <a href="#" class="export-blog-link btn">Continue Reading</a>
+              <a href="blog1.html" class="export-blog-link btn"
+                >Continue Reading</a
+              >
             </div>
           </div>
 
           <!-- Card 2 -->
           <div class="export-blog-card wow fadeInUp" data-wow-delay="0.2s">
             <div class="export-blog-img">
-              <img
-                src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80"
-                alt="Importer Leads"
-              />
+              <a href="blog2.html">
+                <img src="images/b2.jpg" alt="Service Exports" />
+              </a>
               <div class="export-blog-date">
                 <span>22</span><small>Feb 25</small>
               </div>
             </div>
             <div class="export-blog-body">
-              <span class="export-blog-tag">Lead Generation</span>
+              <span class="export-blog-tag">Service Exports</span>
               <h3 class="export-blog-title">
-                <a href="#">How to Generate Credible Importer Leads</a>
+                <a href="blog2.html"
+                  >Service Exports: The Next Big Opportunity for Indian
+                  Businesses</a
+                >
               </h3>
               <p class="export-blog-excerpt">
-                Learn proven methods to find and connect with verified importers
-                who are actively looking for Indian products and services.
+                Service exports are rapidly emerging as one of the biggest
+                growth opportunities for Indian businesses across global
+                markets.
               </p>
-              <a href="#" class="export-blog-link btn">Continue Reading</a>
+              <a href="blog2.html" class="export-blog-link btn"
+                >Continue Reading</a
+              >
             </div>
           </div>
 
           <!-- Card 3 -->
           <div class="export-blog-card wow fadeInUp" data-wow-delay="0.4s">
             <div class="export-blog-img">
-              <img
-                src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80"
-                alt="E-commerce Exports"
-              />
+              <a href="blog3.html">
+                <img src="images/b3.jpg" alt="Convert International Leads" />
+              </a>
               <div class="export-blog-date">
                 <span>10</span><small>Mar 25</small>
               </div>
             </div>
             <div class="export-blog-body">
-              <span class="export-blog-tag">E-commerce</span>
+              <span class="export-blog-tag">Lead Conversion</span>
               <h3 class="export-blog-title">
-                <a href="#">E-commerce as a Tool for Export Growth</a>
-              </h3>
-              <p class="export-blog-excerpt">
-                How Indian businesses are leveraging global e-commerce platforms
-                to reach international buyers and scale export revenue.
-              </p>
-              <a href="#" class="export-blog-link btn">Continue Reading</a>
-            </div>
-          </div>
-
-          <!-- Card 4 -->
-          <div class="export-blog-card wow fadeInUp" data-wow-delay="0.6s">
-            <div class="export-blog-img">
-              <img
-                src="https://images.unsplash.com/photo-1493612276216-ee3925520721?w=600&q=80"
-                alt="Global Markets"
-              />
-              <div class="export-blog-date">
-                <span>05</span><small>Apr 25</small>
-              </div>
-            </div>
-            <div class="export-blog-body">
-              <span class="export-blog-tag">Global Trade</span>
-              <h3 class="export-blog-title">
-                <a href="#"
-                  >How Indian Exporters Are Winning in Changing Global
-                  Markets</a
+                <a href="blog3.html"
+                  >From Inquiry to Order: How to Convert International Leads
+                  Effectively</a
                 >
               </h3>
               <p class="export-blog-excerpt">
-                A deep dive into how Indian exporters are adapting to shifting
-                global trade dynamics and emerging as strong international
-                players.
+                Turning international inquiries into confirmed orders is where
+                real business growth happens. A structured approach makes all
+                the difference.
               </p>
-              <a href="#" class="export-blog-link btn">Continue Reading</a>
+              <a href="blog3.html" class="export-blog-link btn"
+                >Continue Reading</a
+              >
             </div>
           </div>
         </div>
@@ -2364,10 +2383,7 @@
                     <div class="testimonial-item">
                       <div class="testimonial-slider-image">
                         <figure class="image-anime">
-                          <img
-                            src="images/users.jpg"
-                            alt="Parirajan Muthalagu"
-                          />
+                          <img src="images/pa.png" alt="Parirajan Muthalagu" />
                         </figure>
                       </div>
                       <div class="testimonial-slider-content">
@@ -2414,7 +2430,7 @@
                     <div class="testimonial-item">
                       <div class="testimonial-slider-image">
                         <figure class="image-anime">
-                          <img src="images/users.jpg" alt="Suhas R" />
+                          <img src="images/suba.png" alt="Suhas R" />
                         </figure>
                       </div>
                       <div class="testimonial-slider-content">
@@ -2462,7 +2478,7 @@
                       <div class="testimonial-slider-image">
                         <figure class="image-anime">
                           <img
-                            src="images/users.jpg"
+                            src="images/sushsobogan.png"
                             alt="Sushobhan Mukherjee"
                           />
                         </figure>
@@ -2511,7 +2527,7 @@
                       <div class="testimonial-slider-image">
                         <figure class="image-anime">
                           <img
-                            src="images/users.jpg"
+                            src="images/lalit.png"
                             alt="Lalit Kumar Chetani"
                           />
                         </figure>
@@ -2556,7 +2572,7 @@
                     <div class="testimonial-item">
                       <div class="testimonial-slider-image">
                         <figure class="image-anime">
-                          <img src="images/users.jpg" alt="Jubran Siddique" />
+                          <img src="images/jubran.png" alt="Jubran Siddique" />
                         </figure>
                       </div>
                       <div class="testimonial-slider-content">
