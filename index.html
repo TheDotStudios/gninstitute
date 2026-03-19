@@ -1050,28 +1050,38 @@
 
             <style>
               .ep-mentor-downloads {
-                display: flex;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr); /* 2 per row on mobile */
                 gap: 12px;
-                flex-wrap: wrap;
                 margin-top: 24px;
               }
+
+              /* On larger screens, go back to 3 columns */
+              @media (min-width: 768px) {
+                .ep-mentor-downloads {
+                  grid-template-columns: repeat(3, 1fr);
+                }
+              }
+
               .ep-mentor-dl-btn {
                 display: inline-flex;
                 align-items: center;
                 justify-content: center;
                 gap: 8px;
-                width: 180px;
+                width: 100%; /* fills the grid cell */
                 background: #0046db;
                 color: white;
                 font-size: 14px;
                 font-weight: 600;
-                padding: 12px 20px;
+                padding: 12px 10px;
                 border-radius: 10px;
                 text-decoration: none;
                 transition: all 0.3s ease;
                 box-sizing: border-box;
                 border: 1.5px solid transparent;
+                text-align: center;
               }
+
               .ep-mentor-dl-btn:hover {
                 background: #1b222f;
                 color: white;
