@@ -464,7 +464,7 @@ header.main-header .header-sticky.active {
 }
 
 header.main-header .header-sticky.active .container-fluid {
-  padding-bottom: 20px;
+  padding-bottom: 0px;
 }
 
 header.main-header .header-sticky.active .container-fluid::before {
@@ -557,12 +557,7 @@ header.main-header .header-sticky.active .container-fluid::before {
   left: 0;
   top: 100%;
   margin-top: 8px;
-  /* restored File 2's gradient background — File 1 used flat #1b222f */
-  background: linear-gradient(
-    263deg,
-    var(--accent-color) 0.16%,
-    var(--dark-color) 99.84%
-  );
+  background-color: #0046db;
   text-align: left;
   transition: all 0.3s ease-in-out;
   z-index: 999;
@@ -579,11 +574,7 @@ header.main-header .header-sticky.active .container-fluid::before {
   transform: scaleX(0.8);
   border-radius: 16px;
   /* restored gradient to match File 2 */
-  background: linear-gradient(
-    263deg,
-    var(--accent-color) 0.16%,
-    var(--dark-color) 99.84%
-  );
+  background-color: #0046db;
 }
 
 .main-menu ul li:hover > ul {
@@ -602,7 +593,7 @@ header.main-header .header-sticky.active .container-fluid::before {
 
 .main-menu ul ul li a {
   color: rgba(255, 255, 255, 0.85);
-  padding: 10px 20px !important;
+  padding: 0px 20px !important;
   transition: all 0.2s ease;
   display: block;
   font-size: 15px;
@@ -6423,7 +6414,7 @@ header.main-header .header-sticky.active .container-fluid::before {
     justify-content: center;
   }
   .navbar {
-    padding: 0 0 0 !important;
+    padding: 0 0 20px !important;
   }
   .navbar-brand {
     position: relative;
@@ -6431,5 +6422,9 @@ header.main-header .header-sticky.active .container-fluid::before {
   }
   .main-header .container-fluid::before {
     border-bottom: 0px !important;
+  }
+  .main-header .container-fluid {
+    position: relative;
+    padding-bottom: 0px !important;
   }
 }
