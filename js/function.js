@@ -183,35 +183,24 @@
     },
   });
 
-  /* Contact form validation */
   var $contactform = $("#contactForm");
   $contactform.validator({ focus: false }).on("submit", function (event) {
     if (!event.isDefaultPrevented()) {
       event.preventDefault();
-      submitForm();
+
+      // Reset the form
+      $contactform[0].reset();
+
+      // Show the popup
+      var popup = document.getElementById("successPopup");
+      popup.style.display = "flex";
+
+      // Optional: close popup if user clicks the dark backdrop
+      popup.addEventListener("click", function (e) {
+        if (e.target === popup) popup.style.display = "none";
+      });
     }
   });
-
-  function submitForm() {
-    /* Ajax call to submit form */
-    $.ajax({
-      type: "POST",
-      url: "form-process.php",
-      data: $contactform.serialize(),
-      success: function (text) {
-        if (text == "success") {
-          formSuccess();
-        } else {
-          submitMSG(false, text);
-        }
-      },
-    });
-  }
-
-  function formSuccess() {
-    $contactform[0].reset();
-    submitMSG(true, "Message Sent Successfully!");
-  }
 
   function submitMSG(valid, msg) {
     if (valid) {
@@ -228,7 +217,7 @@
   $appointmentForm.validator({ focus: false }).on("submit", function (event) {
     if (!event.isDefaultPrevented()) {
       event.preventDefault();
-      submitappointmentForm();
+      // submitappointmentForm();
     }
   });
 
