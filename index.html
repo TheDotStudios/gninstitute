@@ -1933,7 +1933,11 @@
 
         <div class="gpbp__grid" id="gpbpGrid">
           <!-- Card 1 -->
-          <div class="gpbp__card gpbp--active" data-id="1">
+          <div
+            class="gpbp__card gpbp--active"
+            data-id="1"
+            data-href="product-export.html"
+          >
             <div class="gpbp__collapsed">
               <h3 class="gpbp__ctitle">Product Export<br />Training</h3>
               <div class="gpbp__footer">
@@ -1960,7 +1964,11 @@
           </div>
 
           <!-- Card 2 -->
-          <div class="gpbp__card" data-id="2">
+          <div
+            class="gpbp__card"
+            data-id="2"
+            data-href="product-procedure.html"
+          >
             <div class="gpbp__collapsed">
               <h3 class="gpbp__ctitle">
                 Export Procedures<br />& Documentation
@@ -1989,7 +1997,7 @@
           </div>
 
           <!-- Card 3 -->
-          <div class="gpbp__card" data-id="3">
+          <div class="gpbp__card" data-id="3" data-href="service-export.html">
             <div class="gpbp__collapsed">
               <h3 class="gpbp__ctitle">Service Export<br />Training</h3>
               <div class="gpbp__footer">
@@ -2017,28 +2025,6 @@
         </div>
       </div>
     </section>
-
-    <script>
-      (function () {
-        var grid = document.getElementById("gpbpGrid");
-        if (!grid) return;
-        var cards = Array.from(grid.querySelectorAll(".gpbp__card"));
-
-        var initial = grid.querySelector(".gpbp--active");
-        if (initial) grid.setAttribute("data-active", initial.dataset.id);
-
-        cards.forEach(function (card) {
-          card.addEventListener("click", function () {
-            if (this.classList.contains("gpbp--active")) return;
-            cards.forEach(function (c) {
-              c.classList.remove("gpbp--active");
-            });
-            this.classList.add("gpbp--active");
-            grid.setAttribute("data-active", this.dataset.id);
-          });
-        });
-      })();
-    </script>
 
     <div>
       <style>
@@ -3365,5 +3351,37 @@
     <script src="js/wow.js"></script>
     <!-- Main Custom js file -->
     <script src="js/function.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var grid = document.getElementById("gpbpGrid");
+        if (!grid) return;
+        var cards = Array.from(grid.querySelectorAll(".gpbp__card"));
+
+        var initial = grid.querySelector(".gpbp--active");
+        if (initial) grid.setAttribute("data-active", initial.dataset.id);
+
+        cards.forEach(function (card) {
+          card.addEventListener("click", function () {
+            var href = card.getAttribute("data-href");
+
+            if (card.classList.contains("gpbp--active")) {
+              // Already open → redirect immediately
+              window.location.href = href;
+            } else {
+              // Closed → expand first, then redirect after animation
+              cards.forEach(function (c) {
+                c.classList.remove("gpbp--active");
+              });
+              card.classList.add("gpbp--active");
+              grid.setAttribute("data-active", card.dataset.id);
+
+              setTimeout(function () {
+                window.location.href = href;
+              }, 700); // wait for expand animation then redirect
+            }
+          });
+        });
+      });
+    </script>
   </body>
 </html>

@@ -86,14 +86,6 @@
     </style>
   </head>
   <body>
-    <!-- Preloader Start -->
-    <!-- <div class="preloader">
-      <div class="loading-container">
-        <div class="loading"></div>
-        <div id="loading-icon"><img src="images/loader.svg" alt="" /></div>
-      </div>
-    </div> -->
-    <!-- Preloader End -->
     <header class="main-header">
       <div class="header-sticky">
         <nav class="navbar navbar-expand-lg">
@@ -689,5 +681,66 @@
     <script src="js/wow.js"></script>
     <!-- Main Custom js file -->
     <script src="js/function.js"></script>
+    <!-- Success Popup Modal -->
+    <div
+      id="successPopup"
+      style="
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 9999;
+        align-items: center;
+        justify-content: center;
+      "
+    >
+      <div
+        style="
+          background: #1b222f;
+          color: #fff;
+          border-radius: 16px;
+          padding: 40px 48px;
+          text-align: center;
+          max-width: 420px;
+          width: 90%;
+          box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+          animation: popIn 0.3s ease;
+        "
+      >
+        <div style="margin-bottom: 16px">
+          <i
+            class="fa-solid fa-circle-check"
+            style="font-size: 52px; color: #4ade80"
+          ></i>
+        </div>
+        <h3 style="margin-bottom: 10px; font-size: 22px; color: white">
+          Message Sent!
+        </h3>
+        <p style="opacity: 0.75; margin-bottom: 24px">
+          Thank you for reaching out. We'll get back to you shortly.
+        </p>
+        <button
+          onclick="
+            document.getElementById('successPopup').style.display = 'none'
+          "
+          class="btn-default"
+        >
+          Close
+        </button>
+      </div>
+    </div>
+
+    <style>
+      @keyframes popIn {
+        from {
+          transform: scale(0.85);
+          opacity: 0;
+        }
+        to {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+    </style>
   </body>
 </html>
